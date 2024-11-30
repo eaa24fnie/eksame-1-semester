@@ -141,7 +141,10 @@ header label {
 
     header label {
         display: block;
-        z-index: 3;
+        position: absolute;
+        z-index: 1000;
+        right: 20px;
+        top: 20px;
     }
 
     header .navbar {
