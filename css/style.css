@@ -176,6 +176,13 @@ header label {
 
     #menu-bar:checked ~ .navbar {
         display: block;
+        transition: 0.2s;
+    }
+
+    #menu-bar:not(:checked) ~ .navbar {
+        display: block;
+        right: -500px;
+        transition: 0.2s;
     }
 
     .menubillede {
