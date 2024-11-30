@@ -6,12 +6,13 @@
 
 :root {
     --primary-color: darkgreen;
-    --sekundary-color: darkred;
+    --secondary-color: darkred;
     --tertiary-color: blue;
+    --white:#f2f2f2;
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: var(--white)
 }
 
 header {
@@ -23,8 +24,7 @@ header {
     left: 0;
     right: 0;
     justify-content: space-between;
-    border-bottom: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    color: var(--white);
     font-family: "EB Garamond", serif;
     background: var(--primary-color);
     position: fixed;
@@ -64,12 +64,11 @@ header .navbar ul li a {
 }
 
 header .navbar ul li a:visited {
-   color: var(--secondary-color);
+   color: var(--white);
    text-decoration: none;
 }
 
 header .navbar ul li a:hover {
-    background: var(--secondary-color);
     color: var(--primary-color);
 }
 
@@ -77,13 +76,12 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: #FFF;
+    background: --tertiary-color;
     display: none;
 }
 
 header .navbar ul li ul li {
     width: 100%;
-    border-top: 1px solid rgba(0,0,0,0.1);
 }
 
 header .navbar ul li ul li ul {
@@ -143,8 +141,8 @@ header label {
         display: block;
         position: absolute;
         z-index: 1000;
-        right: 20px;
-        top: 20px;
+        right: 30px;
+        top: 30px;
     }
 
     header .navbar {
@@ -153,7 +151,7 @@ header label {
         right: 0;
         padding-top: 150px;
         width: 40%;
-        background: var(--sekundary-color);
+        background: var(--tertiary-color);
         display: none;
         color: white;
         font-family: "EB Garamond", serif;
@@ -162,17 +160,13 @@ header label {
 
     header .navbar ul li {
         width:100%;
-        background-color: var(--sekundary-color);
+        background-color: var(--tertiary-color);
     }
 
     header .navbar ul li ul {
         position: relative;
         width: 100%;
         color: black;
-    }
-
-    header .navbar ul li ul li {
-        background: #eee;
     }
 
     header .navbar ul li ul li ul {
