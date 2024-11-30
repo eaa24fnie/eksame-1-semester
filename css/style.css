@@ -57,7 +57,8 @@ header .navbar ul li {
 
 header .navbar ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
     padding: 18px;
     display: block;
     color: var(--secondary-color);
@@ -76,7 +77,7 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: --tertiary-color;
+    background: var(--tertiary-color);
     display: none;
 }
 
@@ -114,18 +115,14 @@ header label {
 }
 
 .submenu {
-    font-size: 1.5vh;
-    font-weight: 500;
     font-family: var(--font);
     background-color: var(--tertiary-color);
 }
 
-.submenu li {
-    padding: 10px;
+header .navbar ul li ul li a {
+    font-weight: 200;
+    font-size: 1.3rem;
 }
-
-
-
 
 @media(max-width:960px) {
 
@@ -149,13 +146,15 @@ header label {
         position: absolute;
         top: 0;
         right: 0;
-        padding-top: 150px;
-        width: 40%;
+        padding: 120px 0 240px 0;
+        width: 250px;
         background: var(--tertiary-color);
         display: none;
         color: white;
         font-family: "EB Garamond", serif;
-        height: 100vh;
+        height: auto;
+        border-radius: 0 0 0 1000px;
+        overflow: hidden;
     }
 
     header .navbar ul li {
@@ -167,6 +166,7 @@ header label {
         position: relative;
         width: 100%;
         color: black;
+
     }
 
     header .navbar ul li ul li ul {
@@ -182,11 +182,15 @@ header label {
     #menu-bar:not(:checked) ~ .navbar {
         display: block;
         right: -500px;
-        transition: 0.2s;
+        transition: 0.6s;
     }
 
     .menubillede {
         width: 60px;
+    }
+
+    .submenu {
+        left: 20px;
     }
     
 }
