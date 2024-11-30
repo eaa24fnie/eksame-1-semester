@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color: yellow;
-    --sekundary-color: red;
+    --primary-color: darkgreen;
+    --sekundary-color: darkred;
     --tertiary-color: blue;
 }
 
@@ -17,6 +17,7 @@ body {
 header {
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     gap: 25px;
     top: 0;
     left: 0;
@@ -135,31 +136,36 @@ header label {
         display: flex;
         justify-content: space-between;
         position: fixed;
+        flex-direction: row;
     }
 
     header label {
         display: block;
+        z-index: 3;
     }
 
     header .navbar {
         position: absolute;
-        top: 100%;
-        left: 0;
+        top: 0;
         right: 0;
-        background: var(--primary-color);
+        padding-top: 150px;
+        width: 40%;
+        background: var(--sekundary-color);
         display: none;
-        color: var(--secondary-color);
+        color: white;
         font-family: "EB Garamond", serif;
+        height: 100vh;
     }
 
     header .navbar ul li {
         width:100%;
-        background-color: var(--primary-color);
+        background-color: var(--sekundary-color);
     }
 
     header .navbar ul li ul {
         position: relative;
         width: 100%;
+        color: black;
     }
 
     header .navbar ul li ul li {
@@ -176,9 +182,7 @@ header label {
     }
 
     .menubillede {
-        width: 40px;
-        margin-bottom: -22px;
-        margin-left: 20px;
+        width: 60px;
     }
     
 }
