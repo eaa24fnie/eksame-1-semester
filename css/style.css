@@ -9,10 +9,12 @@
     --secondary-color: darkred;
     --tertiary-color: blue;
     --white:#f2f2f2;
+    --font: 
 }
 
 body {
-    background-color: var(--white)
+    background-color: var(--white);
+    overflow: hidden;
 }
 
 header {
@@ -26,7 +28,6 @@ header {
     justify-content: space-between;
     color: var(--white);
     font-family: "EB Garamond", serif;
-    background: var(--primary-color);
     position: fixed;
 }
 
@@ -38,6 +39,11 @@ header {
     justify-content: space-around;
     align-items: flex-start;
     margin: 20px 20px 20px 20px;
+}
+
+body img {
+    width: 100%;
+
 }
 
 /* NAVBAR */
@@ -59,7 +65,7 @@ header .navbar ul li a {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 800;
-    padding: 18px;
+    padding: 0 0 20px 20px;
     display: block;
     color: var(--secondary-color);
 }
@@ -122,6 +128,7 @@ header label {
 header .navbar ul li ul li a {
     font-weight: 200;
     font-size: 1.3rem;
+    padding-left: 40px;
 }
 
 @media(max-width:960px) {
@@ -187,10 +194,6 @@ header .navbar ul li ul li a {
 
     .menubillede {
         width: 60px;
-    }
-
-    .submenu {
-        left: 20px;
     }
     
 }
