@@ -4,32 +4,89 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica'), url('Helvetica.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Helvetica Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Oblique'), url('Helvetica-Oblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Helvetica Compressed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Compressed'), url('helvetica-compressed-5871d14b6903a.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Helvetica Rounded Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Rounded Bold'), url('helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica'), url('Helvetica-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Helvetica Bold Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Bold Oblique'), url('Helvetica-BoldOblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Helvetica Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Light'), url('helvetica-light-587ebe5a59211.woff') format('woff');
+    }
+
 :root {
-    --primary-color: darkgreen;
-    --secondary-color: darkred;
-    --tertiary-color: blue;
+    --primary-color: #ea1a3a;
+    --secondary-color: #ffc533;
+    --black: #1d1d1f;
     --white:#f2f2f2;
-    --font: 
+    --font: 'Helvetica';
+    --headline: 'Helvetica Compressed';
 }
 
 body {
     background-color: var(--white);
-    overflow: hidden;
 }
 
 header {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: reverse;
     gap: 25px;
     top: 0;
     left: 0;
     right: 0;
     justify-content: space-between;
     color: var(--white);
-    font-family: "EB Garamond", serif;
+    font-family: var(--headline);
     position: fixed;
 }
+
+
 
 .logo {
     width: 60px;
@@ -48,9 +105,6 @@ body img {
 
 /* NAVBAR */
 
-#menu-bar {
-    display: none;
-}
 
 header .navbar ul {
     list-style-type: none;
@@ -83,7 +137,7 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: var(--tertiary-color);
+    background: var(--black);
     display: none;
 }
 
@@ -131,69 +185,100 @@ header .navbar ul li ul li a {
     padding-left: 40px;
 }
 
-@media(max-width:960px) {
-
-    header {
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        flex-direction: row;
-    }
-
-    header label {
+header label {
         display: block;
         position: absolute;
         z-index: 1000;
         right: 30px;
         top: 30px;
-    }
+}
 
-    header .navbar {
+header .navbar {
         position: absolute;
         top: 0;
         right: 0;
         padding: 120px 0 240px 0;
         width: 250px;
-        background: var(--tertiary-color);
+        background: var(--black);
         display: none;
         color: white;
-        font-family: "EB Garamond", serif;
+        font-family: var(--headline);
         height: auto;
         border-radius: 0 0 0 1000px;
         overflow: hidden;
-    }
+}
 
-    header .navbar ul li {
+header .navbar ul li {
         width:100%;
-        background-color: var(--tertiary-color);
-    }
+        background-color: var(--black);
+}
 
-    header .navbar ul li ul {
+header .navbar ul li ul {
         position: relative;
         width: 100%;
         color: black;
 
-    }
+}
 
-    header .navbar ul li ul li ul {
+header .navbar ul li ul li ul {
         width: 100%;
         left: 0;
-    }
+}
 
-    #menu-bar:checked ~ .navbar {
+#menu-bar:checked ~ .navbar {
         display: block;
         transition: 0.2s;
-    }
+}
 
-    #menu-bar:not(:checked) ~ .navbar {
+#menu-bar:not(:checked) ~ .navbar {
         display: block;
         right: -500px;
         transition: 0.6s;
-    }
-
-    .menubillede {
-        width: 60px;
-    }
-    
 }
+
+.menubillede {
+        width: 60px;
+}
+
+/* NAVBAR SLUT */
+
+.landing {
+    display: flex;
+}
+
+.logobox {
+    background: var(--secondary-color);
+    width: 20%;
+    height: 100vh;
+}
+
+.landing main {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid var(--black);
+}
+
+.landing main figure {
+    height: 50vh;
+    border: 1px solid var(--black);
+    overflow: hidden;
+}
+
+.landing main article {
+    height: 20vh;
+    border: 1px solid var(--black);
+    display: flex;
+}
+
+.landing main article article {
+    height: 7vh;
+    width: 400px;
+    border: 1px solid var(--black);
+    margin: 150px 0 0 50px;
+}
+
+.landing main section {
+    height: 30vh;
+    border: 1px solid var(--black);
+}
+    
