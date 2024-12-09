@@ -34,6 +34,12 @@ body {
     font-family: var(--font);
 }
 
+h3 {
+    font-family: var(--headline);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -48,16 +54,17 @@ header {
     position: fixed;
 }
 
-
+header a {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
 
 .logo {
-    width: 60px;
+    width: 50%;
     height: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 20px 20px 20px 20px;
+    padding-top: 8%;
 }
 
 body img {
@@ -79,15 +86,15 @@ header .navbar ul li {
 
 header .navbar ul li a {
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 1.5rem;
-    font-weight: 800;
     padding: 0 0 20px 20px;
     display: block;
-    color: var(--secondary-color);
+    color: var(--black);
 }
 
 header .navbar ul li a:visited {
-   color: var(--white);
+   color: inherit;
    text-decoration: none;
 }
 
@@ -99,7 +106,7 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: var(--black);
+    background: var(--primary-color);
     display: none;
 }
 
@@ -136,11 +143,6 @@ header label {
     display: none;
 }
 
-.submenu {
-    font-family: var(--font);
-    background-color: var(--tertiary-color);
-}
-
 header .navbar ul li ul li a {
     font-weight: 200;
     font-size: 1.3rem;
@@ -161,9 +163,9 @@ header .navbar {
         right: 0;
         padding: 120px 0 240px 0;
         width: 250px;
-        background: var(--black);
+        background: var(--secondary-color);
         display: none;
-        color: white;
+        color: var(--black);
         font-family: var(--headline);
         height: auto;
         border-radius: 0 0 0 1000px;
@@ -172,14 +174,12 @@ header .navbar {
 
 header .navbar ul li {
         width:100%;
-        background-color: var(--black);
 }
 
 header .navbar ul li ul {
         position: relative;
         width: 100%;
         color: black;
-
 }
 
 header .navbar ul li ul li ul {
@@ -194,12 +194,13 @@ header .navbar ul li ul li ul {
 
 #menu-bar:not(:checked) ~ .navbar {
         display: block;
-        right: -500px;
-        transition: 0.6s;
+        top: -500px;
+        transition: 0.6s;     
 }
 
 .menubillede {
         width: 60px;
+        background: var(--primary-color);
 }
 
 /* NAVBAR SLUT */
@@ -215,7 +216,7 @@ header .navbar ul li ul li ul {
 }
 
 .landing main {
-    width: 100%;
+    width: 80%;
     height: 100vh;
 }
 
