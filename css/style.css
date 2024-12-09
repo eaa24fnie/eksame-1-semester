@@ -276,7 +276,7 @@ header .navbar ul li ul li ul {
 }
 
 .landing main figure {
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
     display: flex;
     background-image: url(/img/forside-billede.webp);
@@ -296,12 +296,13 @@ header .navbar ul li ul li ul {
 }
 
 .landing main article {
-    height: 20vh;
+    height: 25vh;
     display: flex;
     background-color: var(--black);
     padding-left: 3%;
     padding-top: 2%;
     flex-direction: column;
+    justify-content: space-between;
 }
 .landing main article h1 {
     color: var(--white);
