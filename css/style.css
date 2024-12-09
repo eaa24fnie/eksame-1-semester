@@ -60,17 +60,10 @@ header a {
     justify-content: center;
 }
 
-.logo {
-    width: 50%;
-    height: auto;
-    display: flex;
-    padding-top: 8%;
-}
-
 body img {
     width: 100%;
-
 }
+
 
 /* NAVBAR */
 
@@ -91,6 +84,7 @@ header .navbar ul li a {
     padding: 0 0 20px 20px;
     display: block;
     color: var(--black);
+    width: 100%;
 }
 
 header .navbar ul li a:visited {
@@ -162,7 +156,7 @@ header .navbar {
         top: 0;
         right: 0;
         padding: 120px 0 240px 0;
-        width: 250px;
+        width: 300px;
         background: var(--secondary-color);
         display: none;
         color: var(--black);
@@ -194,7 +188,7 @@ header .navbar ul li ul li ul {
 
 #menu-bar:not(:checked) ~ .navbar {
         display: block;
-        top: -500px;
+        top: -350px;
         transition: 0.6s;     
 }
 
@@ -203,7 +197,24 @@ header .navbar ul li ul li ul {
         background: var(--primary-color);
 }
 
+
 /* NAVBAR SLUT */
+
+
+
+/* LANDING PAGE */
+
+.logo {
+    width: 50%;
+    height: auto;
+    display: flex;
+    padding-top: 8%;
+}
+
+.logobox a {
+    display: flex;
+    justify-content: center;
+}
 
 .landing {
     display: flex;
@@ -216,7 +227,7 @@ header .navbar ul li ul li ul {
 }
 
 .logobox .begivenhed {
-    padding-top: 30vh;
+    padding-top: 10%;
 }
 
 .logobox .begivenhed h3 {
@@ -241,14 +252,18 @@ header .navbar ul li ul li ul {
     padding-left: 30px;
 }
 
+.logobox .naeste h3:nth-child(5) {
+    padding-bottom: 20px
+}
+
 .logobox .naeste a {
     text-decoration: none;
     background: var(--primary-color);
     color: var(--white);
     padding: 5px 10px;
-    margin-top: 50px;
     font-size: 1.8rem;
     font-family: var(--headline);
+    width: 70%;
 }
 
 .logobox .naeste a:visited {
@@ -314,4 +329,24 @@ main article section.button {
 main section h3 {
     padding-top: 20px;
 }
-    
+
+
+/* LANDING PAGE SLUT */
+
+
+.square {
+    width: 0; 
+    height: 0; 
+    border-left: 100px solid transparent; 
+    border-right: 100px solid transparent; 
+    border-top: 100px solid var(--white);
+    position: absolute;
+}
+
+.mister {
+    background: var(--black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
