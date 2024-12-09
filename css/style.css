@@ -1,71 +1,32 @@
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica'), url('/font/Helvetica.woff') format('woff');
+}
+    
+@font-face {
+        font-family: 'Helvetica Compressed';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Helvetica Compressed'), url('/font/helvetica-compressed-5871d14b6903a.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Helvetica';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica'), url('Helvetica.woff') format('woff');
-    }
-    
 
-    @font-face {
-    font-family: 'Helvetica Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Oblique'), url('Helvetica-Oblique.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Helvetica Compressed';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Compressed'), url('helvetica-compressed-5871d14b6903a.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Helvetica Rounded Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Rounded Bold'), url('helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Helvetica';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica'), url('Helvetica-Bold.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Helvetica Bold Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Bold Oblique'), url('Helvetica-BoldOblique.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Helvetica Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Light'), url('helvetica-light-587ebe5a59211.woff') format('woff');
-    }
 
 :root {
     --primary-color: #ea1a3a;
     --secondary-color: #ffc533;
     --black: #1d1d1f;
     --white:#f2f2f2;
-    --font: 'Helvetica';
-    --headline: 'Helvetica Compressed';
+    --font: "Helvetica";
+    --headline: "Helvetica Compressed";
 }
 
 body {
@@ -262,6 +223,19 @@ header .navbar ul li ul li ul {
     height: 50vh;
     border: 1px solid var(--black);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-image: url(/img/forside-billede.webp);
+    object-fit: cover;
+}
+
+.landing main figure h1 {
+    color: var(--secondary-color);
+    font-family: var(--headline);
+    z-index: 2;
+    position: absolute;
+    font-size: 10em;
+    line-height: 80%;
 }
 
 .landing main article {
