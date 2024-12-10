@@ -400,6 +400,72 @@ main .intro section.button {
 /* LOSNING STARTER */
 
 
+.black {
+    border-top: 100px solid var(--black);
+}
+
+
+.losning {
+    background: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.losning .mulighed {
+    display: flex;
+    width: 50%; 
+    height: 300px;
+    border: solid 1px black;
+    background: var(--white);
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.mulighed h3 {
+    font-size: 2rem;
+} 
+
+.venstre {
+    flex: 1;
+    max-width: 40%;
+    height: fit-content;
+  }
+  
+  .hojre {
+    flex: 2;
+    max-width: 60%;
+    padding: 20px;
+  }
+
+  .hojre h3 {
+    font-size: 2.4rem;
+    line-height: 100%;
+    padding-bottom: 2%;
+  }
+
+  .hojre p {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-bottom: 2%;
+  }
+
+  .hojre .button {
+    width: 50%;
+    text-decoration: none;
+  }
+  
+  .venstre img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+
+  
+
 
 
 
