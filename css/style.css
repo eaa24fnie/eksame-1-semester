@@ -231,7 +231,7 @@ header .navbar ul li ul li ul {
 }
 
 .logobox .begivenhed h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .logobox section.begivenhed h3, .logobox section.begivenhed h4 {
@@ -271,11 +271,11 @@ header .navbar ul li ul li ul {
 }
 
 .landing main {
-    width: 80%;
+    width: 100%;
     height: 100vh;
 }
 
-.landing main figure {
+.landing main .overskrift {
     height: 60vh;
     overflow: hidden;
     display: flex;
@@ -286,7 +286,7 @@ header .navbar ul li ul li ul {
     justify-content: center;
 }
 
-.landing main figure h2 {
+.landing main .overskrift h2 {
     color: var(--secondary-color);
     font-family: var(--headline);
     z-index: 2;
@@ -295,7 +295,7 @@ header .navbar ul li ul li ul {
     padding-left: 3%;
 }
 
-.landing main article {
+.landing main .intro {
     height: 25vh;
     display: flex;
     background-color: var(--black);
@@ -304,14 +304,14 @@ header .navbar ul li ul li ul {
     flex-direction: column;
     justify-content: space-between;
 }
-.landing main article h1 {
+.landing main .intro h1 {
     color: var(--white);
     font-family: var(--font);
     text-transform: uppercase;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
-main article section.button {
+main .intro section.button {
     bottom: 0;
 }
 
@@ -325,10 +325,6 @@ main article section.button {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-main section h3 {
-    padding-top: 20px;
 }
 
 
@@ -351,3 +347,73 @@ main section h3 {
     justify-content: center;
 }
 
+.mister section {
+    padding: 100px 50px 0 50px;
+    width: 50%;
+}
+
+.mister section h3 {
+    color: var(--white);
+    font-family: var(--headline);
+    line-height: 100%;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.mister section h4 {
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.mister section article {
+    padding-bottom: 20px;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-size: 5rem;
+    font-family: var(--headline);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* For larger mobile devices (landscape) */
+@media only screen and (max-width: 1068px) {
+
+    
+    .logobox {
+        display: none;
+    }
+
+}
+
+
+/* For larger mobile devices (landscape) */
+@media only screen and (max-width: 767px) {
+
+    
+    .logobox {
+        display: none;
+    }
+
+}
+
+
+
+/* For small mobile devices (portrait) */
+@media only screen and (max-width: 480px) {
+
+    .logobox {
+        display: none;
+    }
+}
