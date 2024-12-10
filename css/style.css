@@ -19,7 +19,6 @@
 }
 
 
-
 :root {
     --primary-color: #ea1a3a;
     --secondary-color: #ffc533;
@@ -404,6 +403,10 @@ main .intro section.button {
     border-top: 100px solid var(--black);
 }
 
+.padding {
+    padding-top: 10%;
+}
+
 
 .losning {
     background: var(--primary-color);
@@ -414,12 +417,14 @@ main .intro section.button {
 
 .losning .mulighed {
     display: flex;
-    width: 50%; 
+    margin: 0 20px 20px 0;
     height: 300px;
-    border: solid 1px black;
     background: var(--white);
-    margin-top: 200px;
     overflow: hidden;
+}
+
+.margin {
+    margin: 25px;
 }
 
 .mulighed h3 {
@@ -429,43 +434,100 @@ main .intro section.button {
 .venstre {
     flex: 1;
     max-width: 40%;
-    height: fit-content;
-  }
-  
-  .hojre {
+    overflow: hidden;
+}
+   
+.venstre img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.hojre {
     flex: 2;
     max-width: 60%;
     padding: 20px;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-  .hojre h3 {
+.hojre h3 {
     font-size: 2.4rem;
     line-height: 100%;
     padding-bottom: 2%;
-  }
+}
 
-  .hojre p {
+.hojre p {
     font-size: 1.6rem;
     text-transform: uppercase;
     padding-bottom: 2%;
-  }
+}
 
-  .hojre .button {
-    width: 50%;
+.hojre .button {
+    width: auto;
     text-decoration: none;
-  }
-  
-  .venstre img {
+    display: flex;
+}
+
+
+.two {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.one {
+    display: flex;
+    width: 25%;
+}
+
+.column {
+    flex-direction: column;
     width: 100%;
-    height: auto;
-  }
+    display: flex;
+    height: 620px;
+    background: var(--white);
+    overflow: hidden;
+}
 
+.op {
+    flex: 1;
+    max-height: 60%;
+    overflow: hidden;
+}
+   
+.op img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.ned {
+    flex: 2;
+    max-height: 40%;
+    padding: 20px;
+}
+
+.ned h3 {
+    font-size: 2.4rem;
+    line-height: 100%;
+    padding-bottom: 2%;
+}
+
+.ned p {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-bottom: 2%;
+}
+
+.ned .button {
+    width: auto;
+    text-decoration: none;
+}
 
 
 
 
   
-
 
 
 
