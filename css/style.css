@@ -223,7 +223,7 @@ header .navbar ul li ul li ul {
 .logobox {
     background: var(--white);
     width: 20%;
-    height: 90vh;
+    height: 100vh;
 }
 
 .logobox .begivenhed {
@@ -329,6 +329,10 @@ header .navbar ul li ul li ul {
     text-align: center;
 }
 
+.absolute {
+    position: absolute;
+}
+
 
 /* LANDING PAGE SLUT */
 
@@ -337,7 +341,7 @@ header .navbar ul li ul li ul {
 
 
 .square {
-    width: 0; 
+    width: 60%;
     height: 0; 
     border-left: 100px solid transparent; 
     border-right: 100px solid transparent; 
@@ -347,7 +351,7 @@ header .navbar ul li ul li ul {
 
 .mister {
     background: var(--black);
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -412,14 +416,17 @@ header .navbar ul li ul li ul {
     border-top: 100px solid var(--black);
 }
 
+.absolute-white {
+    color: var(--white)
+}
+
 .padding {
     padding-top: 10%;
 }
 
-
 .losning {
     background: var(--primary-color);
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -547,6 +554,10 @@ header .navbar ul li ul li ul {
 
 .red {
     border-top: 100px solid var(--primary-color);
+}
+
+.absolute-secondary {
+    color: var(--secondary-color)
 }
 
 .insta {
