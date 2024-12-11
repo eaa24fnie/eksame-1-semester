@@ -503,7 +503,6 @@ header .navbar ul li ul li ul {
     display: flex;
 }
 
-
 .two {
     display: flex;
     flex-direction: column;
@@ -513,6 +512,13 @@ header .navbar ul li ul li ul {
 .one {
     display: flex;
     width: 25%;
+}
+
+.three {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: none;
 }
 
 .column {
@@ -773,7 +779,6 @@ input[type=submit]:hover {
 
     .overskrift {
         justify-content: flex-end;
-
     }
     
     .overskrift h2 {
@@ -799,20 +804,85 @@ input[type=submit]:hover {
 
 
 
-
-
     .mister {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .mister section img {
+        width: 90%;
+    }
+    
+    .mister section {
+        width: 100%;
+    }
+
+    .mister section article {
+        width: 100%;
+    }
+
+    .mister section h3 {
+        font-size: 1.8rem;
+    }
+
+    .mister .square {
         display: none;
     }
 
+    .absolute {
+        position: relative;
+        color: var(--white);
+        font-size: 2rem;
+    }
 
 
 
 
 
     .losning {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: auto;
+    }
+
+    .losning .mulighed {
+        margin: 20px;
+    }
+
+    .losning .square {
         display: none;
     }
+
+    .three {
+        width: 100%;
+        display: block;
+    }
+
+    .mulighed article h3 {
+        font-size: 2rem;
+    }
+
+    .mulighed article p {
+        font-size: 1.5rem;
+    }
+
+    .mulighed article a {
+        font-size: 2rem;
+    }
+
+    .two {
+        display: none;
+    }
+
+    .one {
+        display: none;
+    }
+
+    
 
 
 
