@@ -215,9 +215,17 @@ header .navbar ul li ul li ul {
 /* LANDING PAGE */
 
 .logo {
+    width: 50%;
+    height: auto;
+    display: flex;
+    padding: 50px 0;
+}
+
+.logo-two {
     width: 20%;
     height: auto;
     display: flex;
+    display: none;
     margin: 20px 0 0 20px;
     position: absolute;
     fill: var(--white);
@@ -762,6 +770,176 @@ input[type=submit]:hover {
     
     .logobox {
         display: none;
+    }
+
+    header nav .logo {
+        display: block;
+    }
+
+    .overskrift {
+        justify-content: flex-end;
+    }
+    
+    .overskrift h2 {
+        font-size: 20vh;
+        padding-bottom: 20px;
+    }
+
+    .landing main .intro h1 {
+        font-size: 1.3rem;
+    }
+
+    .landing main .intro {
+        justify-content: center;
+        padding: 0 5vh;
+        align-items: center;
+    }
+
+    .landing main .intro .button {
+        width:100%;
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+
+
+    .mister {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+        padding: 10% 0;
+    }
+
+    .mister section img {
+        width: 90%;
+    }
+    
+    .mister section {
+        width: 100%;
+    }
+
+    .mister section article {
+        width: 100%;
+    }
+
+    .mister section h3 {
+        font-size: 1.8rem;
+    }
+
+    .mister .square {
+        display: none;
+    }
+
+    .absolute {
+        position: relative;
+        color: var(--white);
+        font-size: 2rem;
+    }
+
+
+
+
+
+    .losning {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: auto;
+        padding: 10% 0;
+    }
+
+    .losning .mulighed {
+        margin: 20px;
+    }
+
+    .losning .square {
+        display: none;
+    }
+
+    .three {
+        width: 100%;
+        display: block;
+    }
+
+    .mulighed article h3 {
+        font-size: 2rem;
+    }
+
+    .mulighed article p {
+        font-size: 1.5rem;
+    }
+
+    .mulighed article a {
+        font-size: 2rem;
+    }
+
+    .two {
+        display: none;
+    }
+
+    .one {
+        display: none;
+    }
+
+
+
+    
+
+    .insta {
+        padding: 10% 0;
+    }
+
+    .insta .square {
+        display: none;
+    }
+
+    .insta .absolute-secondary {
+        color: var(--black);
+    }
+
+    .insta .feed .post {
+        padding: 0;
+    }
+
+    .insta .feed {
+        height: auto;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+
+    .insta .citat h3 {
+        font-size: 2rem;
+    }
+
+
+
+
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nyhedsbrev {
+        width: 100%;
+    }
+
+    .some {
+        display: flex;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+
+    .absolute {
+        font-size: 3rem;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 100%;
     }
 
 }
