@@ -20,8 +20,8 @@
 
 
 :root {
-    --primary-color: #e50303;
-    --secondary-color: #fff27c;
+    --primary-color: #eb321a;
+    --secondary-color: #bdf15b;
     --black: #1d1d1f;
     --white:#f2f2f2;
     --font: "Helvetica";
@@ -293,9 +293,10 @@ header .navbar ul li ul li ul {
     color: var(--secondary-color);
     font-family: var(--headline);
     z-index: 2;
-    font-size: 28vh;
+    font-size: 36.5vh;
     line-height: 80%;
     padding-left: 3%;
+    letter-spacing: 1vh;
 }
 
 .landing main .intro {
@@ -378,6 +379,10 @@ header .navbar ul li ul li ul {
 
 .citation {
     width: 30px;
+}
+
+.citat svg {
+    fill: var(--primary-color);
 }
 
 .citation:nth-child(3) {
