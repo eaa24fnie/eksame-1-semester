@@ -35,7 +35,7 @@ body {
 
 h3 {
     font-family: var(--headline);
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
 }
 
@@ -51,6 +51,7 @@ header {
     color: var(--white);
     font-family: var(--headline);
     position: fixed;
+    z-index: 1000;
 }
 
 header a {
@@ -348,10 +349,11 @@ header .navbar ul li ul li ul {
     height: 90vh;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .mister section {
-    padding: 100px 50px 0 50px;
+    padding: 10% 50px 0 50px;
     width: 50%;
 }
 
@@ -548,18 +550,19 @@ header .navbar ul li ul li ul {
 
 .insta {
     background: var(--white);
-    height: 90vh;
+    height: 140vh;
     display: flex;
     justify-content: center;
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+    flex-wrap: wrap;
+
 }
 
 .feed {
     justify-content: flex-start;
     display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 .post {
@@ -578,6 +581,14 @@ header .navbar ul li ul li ul {
 .post:hover {
     opacity: 100%;
     scale: 1;
+}
+
+.insta .citat {
+    width: auto;
+}
+
+.insta .citat h3 {
+    line-height: 100%;
 }
 
   
