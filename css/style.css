@@ -279,8 +279,9 @@ header .navbar ul li ul li ul {
     height: 65vh;
     overflow: hidden;
     display: flex;
-    background-image: url(/img/forside-billede.webp);
+    background-image: url(/img/forside-billede-logo.jpg);
     object-fit: cover;
+    background-size: 100%;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
