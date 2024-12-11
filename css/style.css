@@ -591,7 +591,74 @@ header .navbar ul li ul li ul {
     line-height: 100%;
 }
 
+
+/* INSTA SLUTTER */
+
+
+/* FOOTER STARTER */
+
+
+footer {
+    background: var(--black);
+    display: flex;
+}
+
+.nyhedsbrev {
+    width: 40%;
+    background-color: var(--primary-color);
+}
   
+form {
+    padding: 2% 10% 10% 10%;
+    color: var(--white);
+}
+  
+.container {
+    padding: 10px;
+}
+
+.container h2 {
+    font-family: var(--headline);
+    font-size: 4rem;
+}
+
+.container p {
+    font-size: 1.5rem;
+}
+  
+.container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--white);
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.0);
+}
+  
+input[type=checkbox] {
+    margin-top: 16px;
+}
+  
+input[type=submit] {
+    background: rgba(0,0,0,0.0);
+    border: 1px solid var(--white);
+    color: white;
+    width: 40%;
+}
+  
+input[type=submit]:hover {
+    background-color: var(--secondary-color);
+    color: var(--black);
+    border: none;
+}
+
+::placeholder {
+    color: var(--white);
+    opacity: 1;
+  }
+
+
 
 
 
