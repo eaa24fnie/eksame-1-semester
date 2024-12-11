@@ -609,7 +609,7 @@ footer {
 }
   
 form {
-    padding: 2% 10% 10% 10%;
+    padding: 20px 80px 100px 80px;
     color: var(--white);
 }
   
@@ -620,6 +620,7 @@ form {
 .container h2 {
     font-family: var(--headline);
     font-size: 4rem;
+    vertical-align: top;
 }
 
 .container p {
@@ -629,15 +630,10 @@ form {
 .container input {
     width: 100%;
     padding: 12px;
-    margin: 8px 0;
     display: inline-block;
     border: 1px solid var(--white);
     box-sizing: border-box;
     background: rgba(0,0,0,0.0);
-}
-  
-input[type=checkbox] {
-    margin-top: 16px;
 }
   
 input[type=submit] {
@@ -658,7 +654,30 @@ input[type=submit]:hover {
     opacity: 1;
   }
 
+  input, select, textarea{
+    color: var(--white)
+}
 
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.some {
+    padding: 40px 80px 100px 80px;
+}
+
+.some img {
+    width: auto;
+    height: 70px;
+    margin: 10px;
+}
+
+.sted iframe {
+  width: 100%;  
+  height: 20vh;
+  border: none;
+}
 
 
 
