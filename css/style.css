@@ -613,7 +613,6 @@ header .navbar ul li ul li ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .feed {
@@ -623,6 +622,12 @@ header .navbar ul li ul li ul {
     overflow-y: hidden;
     white-space: nowrap;
     height: 80%;
+}
+
+.insta .feed {
+    height: auto;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
 }
 
 .post {
