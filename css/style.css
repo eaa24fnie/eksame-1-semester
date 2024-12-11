@@ -243,7 +243,10 @@ header .navbar ul li ul li ul {
 .logobox {
     background: var(--white);
     width: 20%;
-    height: 100vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logobox .begivenhed {
@@ -280,7 +283,7 @@ header .navbar ul li ul li ul {
     background: var(--primary-color);
     color: var(--white);
     padding: 5px 10px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: var(--headline);
     width: 70%;
 }
@@ -291,7 +294,7 @@ header .navbar ul li ul li ul {
 
 .landing main {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 .overskrift {
@@ -384,6 +387,16 @@ header .navbar ul li ul li ul {
 .mister section {
     padding: 10% 50px 0 50px;
     width: 50%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img {
+    width: auto;
+    height: 80%;
 }
 
 .mister section h3 {
