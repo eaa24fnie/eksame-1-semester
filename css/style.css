@@ -20,8 +20,8 @@
 
 
 :root {
-    --primary-color: #ea1a3a;
-    --secondary-color: #ffc533;
+    --primary-color: #e50303;
+    --secondary-color: #fff27c;
     --black: #1d1d1f;
     --white:#f2f2f2;
     --font: "Helvetica";
@@ -280,6 +280,8 @@ header .navbar ul li ul li ul {
     overflow: hidden;
     display: flex;
     background-image: url(/img/forside-billede-logo.jpg);
+    background-blend-mode: multiply;
+    background-color: var(--primary-color);
     object-fit: cover;
     background-size: 100%;
     align-items: flex-start;
