@@ -215,10 +215,12 @@ header .navbar ul li ul li ul {
 /* LANDING PAGE */
 
 .logo {
-    width: 50%;
+    width: 20%;
     height: auto;
     display: flex;
-    padding-top: 8%;
+    margin: 20px 0 0 20px;
+    position: absolute;
+    fill: var(--white);
 }
 
 .logobox a {
@@ -247,7 +249,6 @@ header .navbar ul li ul li ul {
 .logobox section.begivenhed h3, .logobox section.begivenhed h4 {
     padding-left: 30px;
 }
-
 
 .logobox .naeste {
     padding-top: 5%;
@@ -319,6 +320,7 @@ header .navbar ul li ul li ul {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .landing main .intro h1 {
     color: var(--white);
     font-family: var(--font);
@@ -769,6 +771,7 @@ input[type=submit]:hover {
 /* For small mobile devices (portrait) */
 @media(max-width:480px) {
 
+
     .logobox {
         display: none;
     }
@@ -809,6 +812,7 @@ input[type=submit]:hover {
         align-items: center;
         justify-content: space-around;
         height: auto;
+        padding: 10% 0;
     }
 
     .mister section img {
@@ -847,6 +851,7 @@ input[type=submit]:hover {
         width: 100%;
         align-items: center;
         height: auto;
+        padding: 10% 0;
     }
 
     .losning .mulighed {
@@ -882,23 +887,63 @@ input[type=submit]:hover {
         display: none;
     }
 
+
+
     
 
-
-
-
-
-
     .insta {
+        padding: 10% 0;
+    }
+
+    .insta .square {
         display: none;
     }
 
+    .insta .absolute-secondary {
+        color: var(--black);
+    }
+
+    .insta .feed .post {
+        padding: 0;
+    }
+
+    .insta .feed {
+        height: auto;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+
+    .insta .citat h3 {
+        font-size: 2rem;
+    }
 
 
 
 
 
     footer {
-        display: none;
+        flex-direction: column;
+        justify-content: center;
     }
+
+    .nyhedsbrev {
+        width: 100%;
+    }
+
+    .some {
+        display: flex;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+
+    .absolute {
+        font-size: 3rem;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 100%;
+    }
+
 }
