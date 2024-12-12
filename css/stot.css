@@ -248,7 +248,7 @@ header .navbar ul li ul li ul {
     height: 100vh;
     overflow: hidden;
     display: flex;
-    background-image: url(/img/stot.webp);
+    background-image: url(/img/stot.webp)  ;
     background-blend-mode: multiply;
     background-color: var(--secondary-color);
     background-repeat:no-repeat;
@@ -314,6 +314,17 @@ header .navbar ul li ul li ul {
     position: absolute;
 }
 
+.arrow {
+    fill: none;
+    stroke: var(--white);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 10px;
+    width: 6%;
+    position: absolute;
+    bottom: 10%;
+}
+
 
 /* LANDING PAGE SLUT */
 
@@ -326,7 +337,8 @@ header .navbar ul li ul li ul {
 }
 
 .absolute-white {
-    color: var(--white)
+    color: var(--black);
+    margin-top: 25px;
 }
 
 .padding {
@@ -395,16 +407,10 @@ header .navbar ul li ul li ul {
     display: flex;
 }
 
-.two {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 20px;
-}
-
 .one {
     display: flex;
     width: 25%;
+    margin: 0 20px
 }
 
 .three {
