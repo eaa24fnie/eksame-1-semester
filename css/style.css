@@ -244,7 +244,7 @@ header .navbar ul li ul li ul {
 .logobox {
     background: var(--white);
     width: 20%;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -307,16 +307,18 @@ header .navbar ul li ul li ul {
     background-position: right;
     align-items: flex-start;
     flex-direction: column;
+    justify-content: center;
 }
 
 .overskrift h2 {
     color: var(--secondary-color);
     font-family: var(--headline);
     z-index: 2;
-    font-size: 36.5vh;
+    font-size: 40vh;
     line-height: 80%;
     padding-left: 3%;
     letter-spacing: 1vh;
+    text-wrap: balance; 
 }
 
 .landing main .intro {
@@ -324,9 +326,8 @@ header .navbar ul li ul li ul {
     display: flex;
     background-color: var(--black);
     padding-left: 3%;
-    padding-top: 2%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .landing main .intro h1 {
@@ -349,7 +350,7 @@ header .navbar ul li ul li ul {
     text-transform: uppercase;
     font-family: var(--headline);
     width: 500px;
-    padding-bottom: 30px;
+    padding: 1% 0;
     display: flex;
     justify-content: center;
     align-items: center;
