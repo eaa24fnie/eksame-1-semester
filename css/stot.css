@@ -250,11 +250,11 @@ header .navbar ul li ul li ul {
     height: 70vh;
     overflow: hidden;
     display: flex;
-    background-image: url(/img/stot.webp) ;
+    background-image: url(/img/stot.webp); opacity:0.5;
     background-blend-mode: multiply;
     background-color: var(--secondary-color);
     background-repeat:no-repeat;
-    background-size: auto 100vh;
+    background-size: 100% 100%;
     background-position: left;
     align-items: flex-start;
     flex-direction: column;
