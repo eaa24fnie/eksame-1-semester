@@ -241,55 +241,6 @@ header .navbar ul li ul li ul {
     padding-bottom: 10vh;
 }
 
-.logobox {
-    background: var(--white);
-    width: 20%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-}
-
-.logobox .begivenhed {
-    padding-top: 10%;
-}
-
-.logobox .begivenhed h3 {
-    font-size: 2rem;
-}
-
-.logobox section.begivenhed h3, .logobox section.begivenhed h4 {
-    padding-left: 30px;
-}
-
-.logobox .naeste {
-    padding: 5% 0 0 30px;
-}
-
-.logobox .naeste h3 {
-    font-size: 1.4rem;
-    padding-top: 10px;
-}
-
-.logobox .naeste h3:nth-child(4) {
-    padding-bottom: 20px
-}
-
-.logobox .naeste a {
-    text-decoration: none;
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 5px 10px;
-    font-size: 1.5rem;
-    font-family: var(--headline);
-    width: 90%;
-}
-
-.logobox .naeste a:visited {
-    color: var(--white);
-}
-
 .landing main {
     width: 100%;
     height: 100vh;
@@ -299,12 +250,12 @@ header .navbar ul li ul li ul {
     height: 70vh;
     overflow: hidden;
     display: flex;
-    background-image: url(/img/forside-billede-logo.jpg);
+    background-image: url(/img/stot.webp) ;
     background-blend-mode: multiply;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     background-repeat:no-repeat;
     background-size: auto 100vh;
-    background-position: right;
+    background-position: left;
     align-items: flex-start;
     flex-direction: column;
 }
@@ -366,92 +317,6 @@ header .navbar ul li ul li ul {
 
 
 /* LANDING PAGE SLUT */
-
-
-/* MISTER START */
-
-
-.square {
-    width: 60%;
-    height: 0; 
-    border-left: 100px solid transparent; 
-    border-right: 100px solid transparent; 
-    border-top: 100px solid var(--white);
-    position: absolute;
-}
-
-.mister {
-    background: var(--black);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.mister section {
-    padding: 10% 50px 0 50px;
-    width: 50%;
-}
-
-.gallery {
-    display: flex;
-    justify-content: center;
-}
-
-.gallery img {
-    width: auto;
-    height: 80%;
-}
-
-.mister section h3 {
-    color: var(--white);
-    font-family: var(--headline);
-    line-height: 100%;
-    font-size: 2.4rem;
-    text-transform: uppercase;
-}
-
-.citat {
-    width: 60vh;
-}
-
-.citation {
-    width: 30px;
-}
-
-.citat svg {
-    fill: var(--primary-color);
-}
-
-.citation:nth-child(3) {
-    float: right;
-}
-
-.mister section h4 {
-    color: var(--white);
-    font-family: var(--font);
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
-
-.mister section article {
-    padding-bottom: 20px;
-}
-
-.highlight {
-    color: var(--primary-color);
-    font-size: 5rem;
-    font-family: var(--headline);
-}
-
-.h3-black {
-    background-color: var(--black);
-    color: var(--white);
-}
-
-
-/* MISTER SLUTTER */
-
 
 
 /* LOSNING STARTER */
@@ -602,69 +467,6 @@ header .navbar ul li ul li ul {
 /* LOSNING SLUTTER */
 
 
-/* INSTA STARTER */
-
-
-.red {
-    border-top: 100px solid var(--primary-color);
-}
-
-.absolute-secondary {
-    color: var(--secondary-color)
-}
-
-.insta {
-    background: var(--white);
-    height: 120vh;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.feed {
-    justify-content: flex-start;
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    height: 80%;
-}
-
-.insta .feed {
-    height: auto;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
-}
-
-.post {
-    width: auto;
-    height: 60vh;
-    padding: 20vh 10px 0 10px ;
-    opacity: 30%;
-    scale: 0.9;
-    transition: 0.2s;
-}
-
-.post iframe {
-    width: 30vh;
-}
-
-.post:hover {
-    opacity: 100%;
-    scale: 1;
-}
-
-.insta .citat {
-    width: auto;
-}
-
-.insta .citat h3 {
-    line-height: 100%;
-}
-
-
-/* INSTA SLUTTER */
-
 
 /* FOOTER STARTER */
 
@@ -780,10 +582,7 @@ input[type=submit]:hover {
 /* For larger mobile devices (landscape) */
 @media only screen and (max-width: 1068px) {
 
-    
-    .logobox {
-        display: none;
-    }
+
 
 }
 
@@ -791,10 +590,7 @@ input[type=submit]:hover {
 /* For larger mobile devices (landscape) */
 @media only screen and (max-width: 767px) {
 
-    
-    .logobox {
-        display: none;
-    }
+   
 
     header nav .logo {
         display: block;
@@ -823,36 +619,6 @@ input[type=submit]:hover {
         width:100%;
         font-size: 2.5rem;
         margin-top: 20px;
-    }
-
-
-
-    .mister {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: auto;
-        padding: 10% 0;
-    }
-
-    .mister section img {
-        width: 90%;
-    }
-    
-    .mister section {
-        width: 100%;
-    }
-
-    .mister section article {
-        width: 100%;
-    }
-
-    .mister section h3 {
-        font-size: 1.8rem;
-    }
-
-    .mister .square {
-        display: none;
     }
 
     .absolute {
@@ -906,38 +672,6 @@ input[type=submit]:hover {
     .one {
         display: none;
     }
-
-
-
-    
-
-    .insta {
-        padding: 10% 0;
-    }
-
-    .insta .square {
-        display: none;
-    }
-
-    .insta .absolute-secondary {
-        color: var(--black);
-    }
-
-    .insta .feed .post {
-        padding: 0;
-    }
-
-    .insta .feed {
-        height: auto;
-        padding-bottom: 5%;
-        margin-bottom: 5%;
-    }
-
-    .insta .citat h3 {
-        font-size: 2rem;
-    }
-
-
 
 
 
