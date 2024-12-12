@@ -103,7 +103,7 @@ header .navbar ul li a:visited {
 }
 
 header .navbar ul li a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 header .navbar ul li ul {
@@ -167,7 +167,7 @@ header .navbar {
         right: 0;
         padding: 120px 0 240px 0;
         width: 300px;
-        background: var(--secondary-color);
+        background: var(--primary-color);
         display: none;
         color: var(--black);
         font-family: var(--headline);
@@ -204,7 +204,7 @@ header .navbar ul li ul li ul {
 
 .menubillede {
         width: 60px;
-        background: var(--primary-color);
+        background: var(--secondary-color);
 }
 
 
