@@ -299,10 +299,15 @@ header .navbar ul li ul li ul {
     text-transform: uppercase;
     font-family: var(--headline);
     width: 500px;
-    padding-bottom: 30px;
+    padding-bottom: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 100%;
+}
+
+.ned p {
+    padding: 5% 0;
 }
 
 .h3 {
