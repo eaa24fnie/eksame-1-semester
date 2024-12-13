@@ -214,6 +214,7 @@ header .navbar ul li ul li ul {
 
 /* LANDING PAGE */
 
+
 .logo {
     width: 50%;
     height: auto;
@@ -222,7 +223,7 @@ header .navbar ul li ul li ul {
 }
 
 .logo-two {
-    width: 10%;
+    width: 6%;
     height: auto;
     display: flex;
     position: absolute;
@@ -243,11 +244,11 @@ header .navbar ul li ul li ul {
 .eventsbox {
     background: var(--white);
     width: 40%;
-    height: 25vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin: 0 0 2% 2%;
+    justify-content: center;
+    margin: 0 0 4% 2%;
     padding: 2.5%;
     text-transform: uppercase;
     line-height: 1.2;
@@ -270,7 +271,7 @@ header .navbar ul li ul li ul {
     height: 60vh;
     overflow: hidden;
     display: flex;
-    background-image: linear-gradient(to top, rgb(12, 19, 9), rgba(12, 19, 9, 0.1)), url(/img/begivenhed-event.webp);
+    background-image: linear-gradient(to top, rgb(0 0 0), rgb(255 255 255 / 0%)), url(/img/begivenhed-event.webp);
     background-blend-mode: multiply;
     background-color: var(--secondary-color);
     background-repeat:no-repeat;
@@ -344,7 +345,7 @@ header .navbar ul li ul li ul {
 }
 
 .events {
-    background: var(--secondary-color);
+    background: var(--white);
     height: auto;
     display: flex;
     justify-content: center;
@@ -369,14 +370,12 @@ header .navbar ul li ul li ul {
     grid-template-columns: 2fr 2fr 2fr;
     gap: 2%;
     z-index: 3;
+    padding-top: 10px;
 }
 
-.begivenhed:nth-child(-n+3) {
-    color: var(--secondary-color);
-}
 
 .begivenhed {
-    color: var(--white);
+    color: var(--secondary-color);
     font-family: var(--headline);
     line-height: 100%;
     font-size: 2.4rem;
@@ -414,155 +413,6 @@ header .navbar ul li ul li ul {
 .h3-black {
     background-color: var(--black);
     color: var(--white);
-}
-
-
-/* EVENTS SLUTTER */
-
-
-
-/* LOSNING STARTER */
-
-
-.black {
-    border-top: 100px solid var(--black);
-}
-
-.absolute-white {
-    color: var(--white)
-}
-
-.padding {
-    padding-top: 10%;
-}
-
-.losning {
-    background: var(--primary-color);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5%;
-}
-
-.losning .mulighed {
-    display: flex;
-    height: 50%;
-    background: var(--white);
-    overflow: hidden;
-    margin-right: 20px;
-}
-
-.margin {
-    margin: 25px;
-}
-
-.mulighed h3 {
-    font-size: 2rem;
-} 
-
-.venstre {
-    flex: 1;
-    max-width: 40%;
-    overflow: hidden;
-}
-   
-.venstre img {
-    height: 100%;
-    object-fit: cover;
-}
-
-.hojre {
-    flex: 2;
-    max-width: 60%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hojre h3 {
-    font-size: 2.4rem;
-    line-height: 100%;
-    padding-bottom: 2%;
-}
-
-.hojre p {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    padding-bottom: 2%;
-}
-
-.hojre .button {
-    width: auto;
-    text-decoration: none;
-    display: flex;
-}
-
-.two {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 20px;
-}
-
-.one {
-    display: flex;
-    width: 25%;
-}
-
-.three {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    display: none;
-}
-
-.column {
-    flex-direction: column;
-    width: 100%;
-    display: flex;
-    height: 100%;
-    background: var(--white);
-    overflow: hidden;
-}
-
-.op {
-    flex: 1;
-    max-height: 50%;
-    overflow: hidden;
-}
-   
-.op img {
-    height: 100%;
-    object-fit: cover;
-}
-
-.ned {
-    flex: 2;
-    max-height: 40%;
-    padding: 20px;
-}
-
-.ned h3 {
-    font-size: 2.4rem;
-    line-height: 100%;
-    padding-bottom: 2%;
-}
-
-.ned p {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    padding-bottom: 2%;
-}
-
-.ned .button {
-    width: auto;
-    text-decoration: none;
-}
-
-.h3-red {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
 }
 
 
@@ -727,6 +577,15 @@ input[type=submit]:hover {
         padding: 10% 0;
     }
 
+
+    .gallery {
+        grid-template-columns: 2fr 2fr;
+    }
+    
+    .events .absolute {
+        color: var(--secondary-color);
+    }
+
     .events section img {
         width: 90%;
     }
@@ -830,12 +689,17 @@ input[type=submit]:hover {
 
 
 
+
     .events {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         height: auto;
         padding: 10% 0;
+    }
+
+    .gallery {
+        grid-template-columns: 2fr 2fr;
     }
 
     .events section img {
