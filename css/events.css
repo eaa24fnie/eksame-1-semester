@@ -369,7 +369,7 @@ header .navbar ul li ul li ul {
 /* LANDING PAGE SLUT */
 
 
-/* MISTER START */
+/* events START */
 
 
 .square {
@@ -381,7 +381,7 @@ header .navbar ul li ul li ul {
     position: absolute;
 }
 
-.mister {
+.events {
     background: var(--black);
     height: 100vh;
     display: flex;
@@ -389,7 +389,7 @@ header .navbar ul li ul li ul {
     overflow: hidden;
 }
 
-.mister section {
+.events section {
     padding: 10% 50px 0 50px;
     width: 50%;
 }
@@ -404,7 +404,7 @@ header .navbar ul li ul li ul {
     height: 80%;
 }
 
-.mister section h3 {
+.events section h3 {
     color: var(--white);
     font-family: var(--headline);
     line-height: 100%;
@@ -428,14 +428,14 @@ header .navbar ul li ul li ul {
     float: right;
 }
 
-.mister section h4 {
+.events section h4 {
     color: var(--white);
     font-family: var(--font);
     font-size: 2.5rem;
     text-transform: uppercase;
 }
 
-.mister section article {
+.events section article {
     padding-bottom: 20px;
 }
 
@@ -451,7 +451,7 @@ header .navbar ul li ul li ul {
 }
 
 
-/* MISTER SLUTTER */
+/* events SLUTTER */
 
 
 
@@ -600,71 +600,7 @@ header .navbar ul li ul li ul {
 }
 
 
-/* LOSNING SLUTTER */
-
-
-/* INSTA STARTER */
-
-
-.red {
-    border-top: 100px solid var(--primary-color);
-}
-
-.absolute-secondary {
-    color: var(--secondary-color)
-}
-
-.insta {
-    background: var(--white);
-    height: 120vh;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.feed {
-    justify-content: flex-start;
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    height: 80%;
-}
-
-.insta .feed {
-    height: auto;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
-}
-
-.post {
-    width: auto;
-    height: 60vh;
-    padding: 20vh 10px 0 10px ;
-    opacity: 30%;
-    scale: 0.9;
-    transition: 0.2s;
-}
-
-.post iframe {
-    width: 30vh;
-}
-
-.post:hover {
-    opacity: 100%;
-    scale: 1;
-}
-
-.insta .citat {
-    width: auto;
-}
-
-.insta .citat h3 {
-    line-height: 100%;
-}
-
-
-/* INSTA SLUTTER */
+/* EVENTS SLUTTER */
 
 
 /* FOOTER STARTER */
@@ -834,7 +770,7 @@ input[type=submit]:hover {
 
 
 
-    .mister {
+    .events {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -842,23 +778,23 @@ input[type=submit]:hover {
         padding: 10% 0;
     }
 
-    .mister section img {
+    .events section img {
         width: 90%;
     }
     
-    .mister section {
+    .events section {
         width: 100%;
     }
 
-    .mister section article {
+    .events section article {
         width: 100%;
     }
 
-    .mister section h3 {
+    .events section h3 {
         font-size: 1.8rem;
     }
 
-    .mister .square {
+    .events .square {
         display: none;
     }
 
@@ -1022,7 +958,7 @@ input[type=submit]:hover {
 
 
 
-    .mister {
+    .events {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -1030,23 +966,23 @@ input[type=submit]:hover {
         padding: 10% 0;
     }
 
-    .mister section img {
+    .events section img {
         width: 90%;
     }
     
-    .mister section {
+    .events section {
         width: 100%;
     }
 
-    .mister section article {
+    .events section article {
         width: 100%;
     }
 
-    .mister section h3 {
+    .events section h3 {
         font-size: 1.8rem;
     }
 
-    .mister .square {
+    .events .square {
         display: none;
     }
 
