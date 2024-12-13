@@ -371,7 +371,7 @@ header .navbar ul li ul li ul {
     z-index: 3;
 }
 
-.begivenhed:nth-child(1) {
+.begivenhed:nth-child(-n+3) {
     color: var(--secondary-color);
 }
 
@@ -683,29 +683,12 @@ input[type=submit]:hover {
 /* For larger mobile devices (landscape) */
 @media only screen and (max-width: 1068px) {
 
-    
-    .eventsbox {
-        display: none;
-    }
-
 }
 
 
 /* For larger mobile devices (landscape) */
 @media only screen and (max-width: 767px) {
 
-    .logo-two {
-        display: block;
-        color: white;
-    }
-
-    .eventsbox {
-        display: none;
-    }
-
-    header nav .logo {
-        display: block;
-    }
 
     .overskrift {
         justify-content: flex-end;
@@ -767,82 +750,6 @@ input[type=submit]:hover {
     .absolute {
         position: relative;
         color: var(--white);
-        font-size: 2rem;
-    }
-
-
-
-
-
-    .losning {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        height: auto;
-        padding: 10% 0;
-    }
-
-    .losning .mulighed {
-        margin: 20px;
-    }
-
-    .losning .square {
-        display: none;
-    }
-
-    .three {
-        width: 100%;
-        display: block;
-    }
-
-    .mulighed article h3 {
-        font-size: 2rem;
-    }
-
-    .mulighed article p {
-        font-size: 1.5rem;
-    }
-
-    .mulighed article a {
-        font-size: 2rem;
-    }
-
-    .two {
-        display: none;
-    }
-
-    .one {
-        display: none;
-    }
-
-
-
-
-
-    .insta {
-        padding: 10% 0;
-    }
-
-    .insta .square {
-        display: none;
-    }
-
-    .insta .absolute-secondary {
-        color: var(--black);
-    }
-
-    .insta .feed .post {
-        padding: 0;
-    }
-
-    .insta .feed {
-        height: auto;
-        padding-bottom: 5%;
-        margin-bottom: 5%;
-    }
-
-    .insta .citat h3 {
         font-size: 2rem;
     }
 
@@ -887,12 +794,12 @@ input[type=submit]:hover {
         color: white;
     }
 
-    .eventsbox {
-        display: none;
-    }
-
     header nav .logo {
         display: block;
+    }
+
+    .events-hvid {
+        height: 30vh;
     }
 
     .overskrift {
@@ -911,7 +818,6 @@ input[type=submit]:hover {
     }
 
     .landing main .intro {
-        justify-content: center;
         padding: 0 5vh;
         align-items: center;
     }
@@ -957,83 +863,6 @@ input[type=submit]:hover {
         color: var(--white);
         font-size: 2rem;
     }
-
-
-
-
-
-    .losning {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        height: auto;
-        padding: 10% 0;
-    }
-
-    .losning .mulighed {
-        margin: 20px;
-    }
-
-    .losning .square {
-        display: none;
-    }
-
-    .three {
-        width: 100%;
-        display: block;
-    }
-
-    .mulighed article h3 {
-        font-size: 2rem;
-    }
-
-    .mulighed article p {
-        font-size: 1.5rem;
-    }
-
-    .mulighed article a {
-        font-size: 2rem;
-    }
-
-    .two {
-        display: none;
-    }
-
-    .one {
-        display: none;
-    }
-
-
-
-
-
-    .insta {
-        padding: 10% 0;
-    }
-
-    .insta .square {
-        display: none;
-    }
-
-    .insta .absolute-secondary {
-        color: var(--black);
-    }
-
-    .insta .feed .post {
-        padding: 0;
-    }
-
-    .insta .feed {
-        height: auto;
-        padding-bottom: 5%;
-        margin-bottom: 5%;
-    }
-
-    .insta .citat h3 {
-        font-size: 2rem;
-    }
-
 
 
 
