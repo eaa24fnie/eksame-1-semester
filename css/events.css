@@ -231,7 +231,7 @@ header .navbar ul li ul li ul {
     fill: var(--white);
 }
 
-.logobox a {
+.eventsbox a {
     display: flex;
     justify-content: center;
 }
@@ -241,49 +241,25 @@ header .navbar ul li ul li ul {
     padding-bottom: 10vh;
 }
 
-.logobox {
+.eventsbox {
     background: var(--white);
-    width: 20%;
-    height: 80vh;
+    width: 40%;
+    height: 25vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
+    justify-content: flex-end;
+    margin-left: 5%;
+    padding: 2.5%;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
-.logobox .begivenhed {
-    padding: 10% 0 0 30px;
+.eventsbox h3 {
+    font-size: 5rem;
 }
 
-.logobox .begivenhed h3 {
-    font-size: 2rem;
-}
-
-.logobox .naeste {
-    padding: 5% 0 0 30px;
-}
-
-.logobox .naeste h3 {
-    font-size: 1.4rem;
-    padding-top: 10px;
-}
-
-.logobox .naeste h3:nth-child(4) {
-    padding-bottom: 20px
-}
-
-.logobox .naeste a {
-    text-decoration: none;
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 5px 10px;
-    font-size: 1.5rem;
-    font-family: var(--headline);
-    width: 90%;
-}
-
-.logobox .naeste a:visited {
-    color: var(--white);
+.eventsbox h4 {
+    font-size: 1.rem;
 }
 
 .landing main {
@@ -295,7 +271,7 @@ header .navbar ul li ul li ul {
     height: 70vh;
     overflow: hidden;
     display: flex;
-    background-image: url(/img/forside-billede-logo.jpg);
+    background-image: url(/img/.jpg);
     background-blend-mode: multiply;
     background-color: var(--primary-color);
     background-repeat:no-repeat;
@@ -346,7 +322,7 @@ header .navbar ul li ul li ul {
 .button {
     background-color: var(--primary-color);
     color: var(--white);
-    font-size: 3rem;
+    font-size: 1.9rem;
     text-transform: uppercase;
     font-family: var(--headline);
     width: 500px;
@@ -369,7 +345,7 @@ header .navbar ul li ul li ul {
 /* LANDING PAGE SLUT */
 
 
-/* events START */
+/* EVENTS START */
 
 
 .square {
@@ -451,7 +427,7 @@ header .navbar ul li ul li ul {
 }
 
 
-/* events SLUTTER */
+/* EVENTS SLUTTER */
 
 
 
@@ -718,7 +694,7 @@ input[type=submit]:hover {
 @media only screen and (max-width: 1068px) {
 
     
-    .logobox {
+    .eventsbox {
         display: none;
     }
 
@@ -733,7 +709,7 @@ input[type=submit]:hover {
         color: white;
     }
 
-    .logobox {
+    .eventsbox {
         display: none;
     }
 
@@ -921,7 +897,7 @@ input[type=submit]:hover {
         color: white;
     }
 
-    .logobox {
+    .eventsbox {
         display: none;
     }
 
