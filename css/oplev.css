@@ -412,9 +412,10 @@ header .navbar ul li ul li ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width: 100%;
-    height: 700px;
-    margin-top: 10%;
+    width: 70%;
+    height: 100vh;
+    margin-top: 15vh;
+    position: absolute;
   }
   
   .grid-item {
@@ -425,12 +426,40 @@ header .navbar ul li ul li ul {
     font-size: 1.5rem;
     font-weight: bold;
     background-color: var(--black);
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .grid-item img {
+    opacity: 0.3;
+  }
+
+  .grid-item h3 {
+    position: absolute;
+    text-align: center;
+  }
+
+  .bold {
+    font-size: 7rem;
+  }
+
+  .grid-item img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  .grid-item:nth-child(1) {
+    margin: 20px 0 20px 20px;
+  }
+
+  .grid-item:nth-child(4) {
+    margin: 20px 20px 20px 0;
   }
 
   .grid-item:nth-child(2), .grid-item:nth-child(3) {
     background-color: transparent;
   }
-
 
   .box {
     position: absolute;
