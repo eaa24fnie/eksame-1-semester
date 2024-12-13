@@ -222,13 +222,12 @@ header .navbar ul li ul li ul {
 }
 
 .logo-two {
-    width: 20%;
+    width: 10%;
     height: auto;
     display: flex;
-    display: none;
-    margin: 20px 0 0 20px;
     position: absolute;
     fill: var(--white);
+    margin: 5% 0 0 5%;
 }
 
 .eventsbox a {
@@ -248,14 +247,15 @@ header .navbar ul li ul li ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 5%;
+    margin: 0 0 5% 5%;
     padding: 2.5%;
     text-transform: uppercase;
     line-height: 1.2;
+    overflow: hidden;
 }
 
 .eventsbox h3 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .eventsbox h4 {
@@ -268,18 +268,18 @@ header .navbar ul li ul li ul {
 }
 
 .overskrift {
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
     display: flex;
-    background-image: url(/img/.jpg);
+    background-image: url(/img/begivenhed-event.webp);
     background-blend-mode: multiply;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     background-repeat:no-repeat;
     background-size: auto 100vh;
     background-position: right;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .overskrift h2 {
