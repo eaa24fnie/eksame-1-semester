@@ -227,7 +227,7 @@ header .navbar ul li ul li ul {
     display: flex;
     position: absolute;
     fill: var(--white);
-    margin: 5% 0 0 5%;
+    margin: 2% 0 0 2%;
 }
 
 .eventsbox a {
@@ -237,8 +237,8 @@ header .navbar ul li ul li ul {
 
 .landing {
     display: flex;
-    padding-bottom: 10vh;
 }
+
 
 .eventsbox {
     background: var(--white);
@@ -247,7 +247,7 @@ header .navbar ul li ul li ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 0 0 5% 5%;
+    margin: 0 0 2% 2%;
     padding: 2.5%;
     text-transform: uppercase;
     line-height: 1.2;
@@ -264,14 +264,13 @@ header .navbar ul li ul li ul {
 
 .landing main {
     width: 100%;
-    height: 100vh;
 }
 
 .overskrift {
-    height: 80vh;
+    height: 60vh;
     overflow: hidden;
     display: flex;
-    background-image: url(/img/begivenhed-event.webp);
+    background-image: linear-gradient(to top, rgb(12, 19, 9), rgba(12, 19, 9, 0.1)), url(/img/begivenhed-event.webp);
     background-blend-mode: multiply;
     background-color: var(--secondary-color);
     background-repeat:no-repeat;
@@ -295,22 +294,6 @@ header .navbar ul li ul li ul {
 
 .overskrift h2:nth-child(1) {
     color: var(--white);
-}
-
-.landing main .intro {
-    height: 30vh;
-    display: flex;
-    background-color: var(--black);
-    padding-left: 3%;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.landing main .intro h1 {
-    color: var(--white);
-    font-family: var(--font);
-    text-transform: uppercase;
-    font-size: 2rem;
 }
 
 .naeste p {
@@ -339,6 +322,8 @@ header .navbar ul li ul li ul {
 
 .absolute {
     position: absolute;
+    color: white;
+    z-index: 3;
 }
 
 
@@ -353,39 +338,50 @@ header .navbar ul li ul li ul {
     height: 0; 
     border-left: 100px solid transparent; 
     border-right: 100px solid transparent; 
-    border-top: 100px solid var(--white);
+    border-top: 100px solid var(--black);
     position: absolute;
+    z-index: 3;
 }
 
 .events {
-    background: var(--black);
-    height: 100vh;
+    background: var(--secondary-color);
+    height: auto;
     display: flex;
     justify-content: center;
     overflow: hidden;
+    padding-bottom: 10vh;
+}
+
+.events-hvid {
+    background: var(--white);
+    position: absolute;
+    width: 100%;
+    height: 63vh;
+    z-index: 2;
 }
 
 .events section {
-    padding: 10% 50px 0 50px;
-    width: 50%;
+    padding: 15vh 50px 0 50px;
 }
 
 .gallery {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 2%;
+    z-index: 3;
 }
 
-.gallery img {
-    width: auto;
-    height: 80%;
+.begivenhed:nth-child(1) {
+    color: var(--secondary-color);
 }
 
-.events section h3 {
+.begivenhed {
     color: var(--white);
     font-family: var(--headline);
     line-height: 100%;
     font-size: 2.4rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .citat {
@@ -404,12 +400,6 @@ header .navbar ul li ul li ul {
     float: right;
 }
 
-.events section h4 {
-    color: var(--white);
-    font-family: var(--font);
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
 
 .events section article {
     padding-bottom: 20px;
