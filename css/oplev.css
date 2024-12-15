@@ -337,7 +337,7 @@ header .navbar ul li ul li ul {
 
 .oplev {
     background: var(--primary-color);
-    height: 2000px;
+    height: 150vh;
     display: flex;
     justify-content: center;
     padding: 0 30vh 10vh 30vh;
@@ -423,30 +423,25 @@ header .navbar ul li ul li ul {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.5rem;
     font-weight: bold;
     background-color: var(--black);
     overflow: hidden;
     object-fit: cover;
-  }
-
-  .grid-item img {
-    opacity: 0.3;
+    word-wrap: normal;
   }
 
   .grid-item h3 {
     position: absolute;
     text-align: center;
-  }
-
-  .bold {
-    font-size: 7rem;
+    font-size: 5rem;
+    letter-spacing: 5px;
   }
 
   .grid-item img {
     object-fit: cover;
     width: 100%;
     height: auto;
+    opacity: 0.3;
   }
 
   .grid-item:nth-child(1) {
