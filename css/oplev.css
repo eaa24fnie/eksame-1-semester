@@ -333,7 +333,11 @@ header .navbar ul li ul li ul {
 
 .oplev {
     background: var(--primary-color);
-    height: 200vh;
+    background-image: linear-gradient(to top, rgb(40, 66, 33), rgba(40, 66, 33, 0.5),rgb(40, 66, 33)), url(/img/texture.svg);
+    background-repeat: repeat;
+    background-size: 5% auto;
+    background-blend-mode: luminosity;
+    height: 220vh;
     display: flex;
     justify-content: center;
     padding: 0 30vh 10vh 30vh;
@@ -512,17 +516,27 @@ header .navbar ul li ul li ul {
     align-items: center;
   }
 
-  .piechart {
-    width: 50vh;
-    height: 50vh;
-    border-radius: 50%;
-    background-image: conic-gradient(
-        #dd5211 70deg,
-        lightblue 0 235deg,
-        orange 0
-    );
+  .radar {
+    width: 100vh;
+    height: auto;
     position: absolute;
     top: 20vh;
+    border: solid 2px var(--secondary-color);
+    background: var(--primary-color);
+    padding: 20px;
+}
+
+.radar h4 {
+    font-size: 3rem;
+    font-family: var(--headline);
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+.radar p {
+    font-size: 1.3rem;
+    color: var(--white);
+    font-family: var(--font);
 }
 
 
@@ -772,19 +786,32 @@ input[type=submit]:hover {
         display: none;
       }
 
-      .piechart {
-        width: 40vh;
-        height: 40vh;
-        border-radius: 50%;
-        background-image: conic-gradient(
-            #dd5211 70deg,
-            lightblue 0 235deg,
-            orange 0
-        );
+      .radar {
+        width: 65vh;
+        height: auto;
         position: absolute;
         top: 20vh;
+        border: solid 2px var(--secondary-color);
+        background: var(--primary-color);
+        padding: 20px;
     }
-
+    
+    .radar h4 {
+        font-size: 3rem;
+        font-family: var(--headline);
+        color: var(--white);
+        letter-spacing: 1px;
+        line-height: 80%;
+        padding-top: 20px;
+    }
+    
+    .radar p {
+        font-size: 1.3rem;
+        color: var(--white);
+        font-family: var(--font);
+        padding-top: 20px;
+    }
+    
 
 
 
@@ -952,18 +979,32 @@ input[type=submit]:hover {
         display: none;
       }
 
-      .piechart {
+      .radar {
         width: 40vh;
-        height: 40vh;
-        border-radius: 50%;
-        background-image: conic-gradient(
-            #dd5211 70deg,
-            lightblue 0 235deg,
-            orange 0
-        );
+        height: auto;
         position: absolute;
         top: 20vh;
+        border: solid 2px var(--secondary-color);
+        background: var(--primary-color);
+        padding: 20px;
     }
+    
+    .radar h4 {
+        font-size: 3rem;
+        font-family: var(--headline);
+        color: var(--white);
+        letter-spacing: 1px;
+        line-height: 80%;
+        padding-top: 20px;
+    }
+    
+    .radar p {
+        font-size: 1.3rem;
+        color: var(--white);
+        font-family: var(--font);
+        padding-top: 20px;
+    }
+    
 
 
 
@@ -1013,6 +1054,10 @@ input[type=submit]:hover {
 
     header nav .logo {
         display: block;
+    }
+
+    .oplev {
+        padding: 0 20vh 10vh 20vh;
     }
 
     .oplev-hvid {
@@ -1130,18 +1175,32 @@ input[type=submit]:hover {
         display: none;
       }
 
-      .piechart {
+      .radar {
         width: 40vh;
-        height: 40vh;
-        border-radius: 50%;
-        background-image: conic-gradient(
-            #dd5211 70deg,
-            lightblue 0 235deg,
-            orange 0
-        );
+        height: auto;
         position: absolute;
         top: 20vh;
+        border: solid 2px var(--secondary-color);
+        background: var(--primary-color);
+        padding: 20px;
     }
+    
+    .radar h4 {
+        font-size: 3rem;
+        font-family: var(--headline);
+        color: var(--white);
+        letter-spacing: 1px;
+        line-height: 80%;
+        padding-top: 20px;
+    }
+    
+    .radar p {
+        font-size: 1.3rem;
+        color: var(--white);
+        font-family: var(--font);
+        padding-top: 20px;
+    }
+    
 
 
 
