@@ -223,7 +223,7 @@ header .navbar ul li ul li ul {
 }
 
 .logo-two {
-    width: 6%;
+    width: 130px;
     height: auto;
     display: flex;
     position: absolute;
@@ -271,7 +271,7 @@ header .navbar ul li ul li ul {
     height: 60vh;
     overflow: hidden;
     display: flex;
-    background-image: linear-gradient(to top, rgb(0 0 0), rgb(255 255 255 / 0%)), url(/img/begivenhed-event.webp);
+    background-image: linear-gradient(to top, rgb(40, 66, 33),rgba(40, 66, 33, 0.3)), url(/img/begivenhed-event.webp);
     background-blend-mode: multiply;
     background-color: var(--secondary-color);
     background-repeat:no-repeat;
@@ -533,11 +533,32 @@ input[type=submit]:hover {
 /* For larger mobile devices (landscape) */
 @media only screen and (max-width: 1068px) {
 
+    .eventsbox {
+        background: var(--white);
+        width: 50%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 4% 2%;
+        padding: 2.5%;
+        text-transform: uppercase;
+        line-height: 1.2;
+        overflow: hidden;
+    }
+
+
 }
 
 
 /* For larger mobile devices (landscape) */
 @media only screen and (max-width: 767px) {
+
+
+    .logo-two {
+        width: 120px;
+    }
+
 
 
     .overskrift {
@@ -565,6 +586,11 @@ input[type=submit]:hover {
         width:100%;
         font-size: 2.5rem;
         margin-top: 20px;
+    }
+
+    .eventsbox {
+        width: 50vh;
+        text-align: center;
     }
 
 
@@ -651,6 +677,7 @@ input[type=submit]:hover {
     .logo-two {
         display: block;
         color: white;
+        width: 100px;
     }
 
     header nav .logo {
@@ -686,6 +713,11 @@ input[type=submit]:hover {
         font-size: 2.5rem;
         margin-top: 20px;
     }
+    
+    .eventsbox {
+        width: 42vh;
+        text-align: center;
+    }
 
 
 
@@ -699,7 +731,7 @@ input[type=submit]:hover {
     }
 
     .gallery {
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr;
     }
 
     .events section img {
