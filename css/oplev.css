@@ -284,10 +284,6 @@ header .navbar ul li ul li ul {
     font-size: 30vh;
 }
 
-.overskrift h2:nth-child(1) {
-    color: var(--white);
-}
-
 .naeste p {
     white-space: nowrap;
     overflow: hidden;  
@@ -337,7 +333,7 @@ header .navbar ul li ul li ul {
 
 .oplev {
     background: var(--primary-color);
-    height: 150vh;
+    height: 200vh;
     display: flex;
     justify-content: center;
     padding: 0 30vh 10vh 30vh;
@@ -427,13 +423,13 @@ header .navbar ul li ul li ul {
     background-color: var(--black);
     overflow: hidden;
     object-fit: cover;
-    word-wrap: normal;
+    word-wrap:break-word;
   }
 
   .grid-item h3 {
     position: absolute;
     text-align: center;
-    font-size: 5rem;
+    font-size: 3.5rem;
     letter-spacing: 5px;
   }
 
@@ -442,6 +438,7 @@ header .navbar ul li ul li ul {
     width: 100%;
     height: auto;
     opacity: 0.3;
+    min-height: 100%;
   }
 
   .grid-item:nth-child(1) {
@@ -510,7 +507,23 @@ header .navbar ul li ul li ul {
     height: 50vh;
     top: 100vh;
     right: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .piechart {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #dd5211 70deg,
+        lightblue 0 235deg,
+        orange 0
+    );
+    position: absolute;
+    top: 20vh;
+}
 
 
 /* OPLEV SLUTTER */
@@ -634,22 +647,63 @@ input[type=submit]:hover {
 /* For larger mobile devices (landscape) */
 @media only screen and (max-width: 1068px) {
 
-}
+    .logo-two {
+        display: block;
+        color: white;
+        width: 15%;
+    }
 
+    header nav .logo {
+        display: block;
+    }
 
-/* For larger mobile devices (landscape) */
-@media only screen and (max-width: 767px) {
+    .oplev-hvid {
+        height: 30vh;
+    }
 
-
-    .overskrift {
-        justify-content: flex-end;
+    .oplevtitel {
+        color: var(--white);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        text-transform: uppercase;
+        line-height: 1;
         overflow: hidden;
-        padding-bottom: 10%;
+    }
+    
+    .oplevtitel h3 {
+        font-size: 10rem;
+    }
+    
+    .oplevtitel h4 {
+        font-size: 2rem;
+    }
+    
+    .overskrift {
+        height: 60vh;
+        overflow: hidden;
+        display: flex;
+        background-image: linear-gradient(to top, rgb(40, 66, 33),rgba(66, 49, 33, 0)), url(/img/scene.webp);
+        background-color: var(--primary-color);
+        background-repeat:no-repeat;
+        background-size: 100% auto;
+        background-position: right;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .overskrift h2 {
-        font-size: calc(10vh + 10vh);
+        color: var(--secondary-color);
+        font-family: var(--headline);
+        z-index: 2;
+        line-height: 80%;
+        padding-left: 3%;
+        letter-spacing: 1vh;
+        text-wrap: balance;
+        font-size: 30vh;
     }
 
     .landing main .intro h1 {
@@ -657,7 +711,6 @@ input[type=submit]:hover {
     }
 
     .landing main .intro {
-        justify-content: center;
         padding: 0 5vh;
         align-items: center;
     }
@@ -670,48 +723,251 @@ input[type=submit]:hover {
 
 
 
-    .oplev {
-        flex-direction: column;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 70%;
+        height: 100vh;
+        margin-top: 15vh;
+        position: absolute;
+      }
+      
+      .grid-item {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
+        color: white;
+        font-weight: bold;
+        background-color: var(--black);
+        overflow: hidden;
+        object-fit: cover;
+        word-wrap: normal;
+      }
+    
+      .grid-item h3 {
+        position: absolute;
+        text-align: center;
+        font-size: 4rem;
+        letter-spacing: 5px;
+      }
+    
+      .grid-item img {
+        object-fit: cover;
         height: auto;
-        padding: 10% 0;
-    }
-
-
-    .gallery {
-        grid-template-columns: 2fr 2fr;
-    }
+        opacity: 0.3;
+        min-height: 100%
+      }
     
-    .oplev .absolute {
-        color: var(--secondary-color);
-    }
-
-    .oplev section img {
-        width: 90%;
-    }
+      .grid-item:nth-child(1) {
+        margin: 20px;
+      }
     
-    .oplev section {
-        width: 100%;
-    }
-
-    .oplev section article {
-        width: 100%;
-    }
-
-    .oplev section h3 {
-        font-size: 1.8rem;
-    }
-
-    .oplev .square {
+      .grid-item:nth-child(4) {
+        margin: 20px;
+      }
+    
+      .grid-item:nth-child(2), .grid-item:nth-child(3) {
         display: none;
+      }
+
+      .piechart {
+        width: 40vh;
+        height: 40vh;
+        border-radius: 50%;
+        background-image: conic-gradient(
+            #dd5211 70deg,
+            lightblue 0 235deg,
+            orange 0
+        );
+        position: absolute;
+        top: 20vh;
     }
+
+
+
+
+
+
+
+
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nyhedsbrev {
+        width: 100%;
+    }
+
+    .some {
+        display: flex;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
 
     .absolute {
-        position: relative;
+        font-size: 3rem;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 100%;
+    }
+
+}
+
+
+
+
+/* For larger mobile devices (landscape) */
+@media only screen and (max-width: 767px) {
+
+
+    .logo-two {
+        display: block;
+        color: white;
+        width: 20%;
+    }
+
+    header nav .logo {
+        display: block;
+    }
+
+    .oplev-hvid {
+        height: 30vh;
+    }
+
+    .oplevtitel {
         color: var(--white);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        line-height: 1;
+        overflow: hidden;
+    }
+    
+    .oplevtitel h3 {
+        font-size: 10rem;
+    }
+    
+    .oplevtitel h4 {
         font-size: 2rem;
     }
+    
+    .overskrift {
+        height: 80vh;
+        overflow: hidden;
+        display: flex;
+        background-image: linear-gradient(to top, rgb(40, 66, 33),rgba(66, 49, 33, 0)), url(/img/scene.webp);
+        background-color: var(--primary-color);
+        background-repeat:no-repeat;
+        background-size: auto 100%;
+        background-position: right;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .overskrift h2 {
+        color: var(--secondary-color);
+        font-family: var(--headline);
+        z-index: 2;
+        line-height: 80%;
+        padding-left: 3%;
+        letter-spacing: 1vh;
+        text-wrap: balance;
+        font-size: 30vh;
+    }
+
+    .landing main .intro h1 {
+        font-size: 1.3rem;
+    }
+
+    .landing main .intro {
+        padding: 0 5vh;
+        align-items: center;
+    }
+
+    .landing main .intro .button {
+        width:100%;
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 70%;
+        height: 100vh;
+        margin-top: 15vh;
+        position: absolute;
+      }
+      
+      .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        background-color: var(--black);
+        overflow: hidden;
+        object-fit: cover;
+        word-wrap: normal;
+      }
+    
+      .grid-item h3 {
+        position: absolute;
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: 5px;
+      }
+    
+      .grid-item img {
+        object-fit: cover;
+        height: auto;
+        opacity: 0.3;
+        min-height: 100%;
+      }
+    
+      .grid-item:nth-child(1) {
+        margin: 20px;
+      }
+    
+      .grid-item:nth-child(4) {
+        margin: 20px;
+      }
+    
+      .grid-item:nth-child(2), .grid-item:nth-child(3) {
+        display: none;
+      }
+
+      .piechart {
+        width: 40vh;
+        height: 40vh;
+        border-radius: 50%;
+        background-image: conic-gradient(
+            #dd5211 70deg,
+            lightblue 0 235deg,
+            orange 0
+        );
+        position: absolute;
+        top: 20vh;
+    }
+
+
+
+
 
 
 
@@ -752,6 +1008,7 @@ input[type=submit]:hover {
     .logo-two {
         display: block;
         color: white;
+        width: 20%;
     }
 
     header nav .logo {
@@ -762,15 +1019,49 @@ input[type=submit]:hover {
         height: 30vh;
     }
 
-    .overskrift {
-        justify-content: flex-end;
+    .oplevtitel {
+        color: var(--white);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        text-transform: uppercase;
+        line-height: 1;
         overflow: hidden;
-        padding-bottom: 10%;
+    }
+    
+    .oplevtitel h3 {
+        font-size: 10rem;
+    }
+    
+    .oplevtitel h4 {
+        font-size: 2rem;
+    }
+    
+    .overskrift {
+        height: 80vh;
+        overflow: hidden;
+        display: flex;
+        background-image: linear-gradient(to top, rgb(40, 66, 33),rgba(66, 49, 33, 0)), url(/img/scene.webp);
+        background-color: var(--primary-color);
+        background-repeat:no-repeat;
+        background-size: auto 100%;
+        background-position: right;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .overskrift h2 {
-        font-size: calc(10vh + 10vh);
+        color: var(--secondary-color);
+        font-family: var(--headline);
+        z-index: 2;
+        line-height: 80%;
+        padding-left: 3%;
+        letter-spacing: 1vh;
+        text-wrap: balance;
+        font-size: 30vh;
     }
 
     .landing main .intro h1 {
@@ -791,43 +1082,67 @@ input[type=submit]:hover {
 
 
 
-    .oplev {
-        flex-direction: column;
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 70%;
+        height: 100vh;
+        margin-top: 15vh;
+        position: absolute;
+      }
+      
+      .grid-item {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
-        height: auto;
-        padding: 10% 0;
-    }
-
-    .gallery {
-        grid-template-columns: 2fr 2fr;
-    }
-
-    .oplev section img {
-        width: 90%;
-    }
+        color: white;
+        font-weight: bold;
+        background-color: var(--black);
+        overflow: hidden;
+        object-fit: cover;
+        word-wrap: normal;
+      }
     
-    .oplev section {
-        width: 100%;
-    }
-
-    .oplev section article {
-        width: 100%;
-    }
-
-    .oplev section h3 {
-        font-size: 1.8rem;
-    }
-
-    .oplev .square {
-        display: none;
-    }
-
-    .absolute {
-        position: relative;
-        color: var(--white);
+      .grid-item h3 {
+        position: absolute;
+        text-align: center;
         font-size: 2rem;
+        letter-spacing: 5px;
+      }
+    
+      .grid-item img {
+        object-fit: cover;
+        height: auto;
+        opacity: 0.3;
+        min-height: 100%
+      }
+    
+      .grid-item:nth-child(1) {
+        margin: 20px;
+      }
+    
+      .grid-item:nth-child(4) {
+        margin: 20px;
+      }
+    
+      .grid-item:nth-child(2), .grid-item:nth-child(3) {
+        display: none;
+      }
+
+      .piechart {
+        width: 40vh;
+        height: 40vh;
+        border-radius: 50%;
+        background-image: conic-gradient(
+            #dd5211 70deg,
+            lightblue 0 235deg,
+            orange 0
+        );
+        position: absolute;
+        top: 20vh;
     }
+
 
 
 
