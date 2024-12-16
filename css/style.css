@@ -375,6 +375,7 @@ a.button:visited {
 
 .absolute {
     position: absolute;
+    letter-spacing: 0.5vh;
 }
 
 
@@ -385,7 +386,7 @@ a.button:visited {
 
 
 .square {
-    width: 60%;
+    width: 80%;
     height: 0; 
     border-left: 100px solid transparent; 
     border-right: 100px solid transparent; 
@@ -476,7 +477,7 @@ a.button:visited {
 }
 
 .absolute-white {
-    color: var(--white)
+    color: var(--white);
 }
 
 .padding {
@@ -814,6 +815,10 @@ input[type=submit]:hover {
         display: none;
     }
 
+    .landing {
+        height: 100vh;
+    }
+
     header nav .logo {
         display: block;
     }
@@ -992,6 +997,11 @@ input[type=submit]:hover {
 
 /* For small mobile devices (portrait) */
 @media(max-width:480px) {
+
+    header .navbar {
+        padding: 120px 0 180px 0;
+        width: 200px;
+    }
 
     .logo-two {
         display: block;

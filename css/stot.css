@@ -711,6 +711,10 @@ input[type=submit]:hover {
 /* For small mobile devices (portrait) */
 @media(max-width:480px) {
 
+    header .navbar {
+        padding: 120px 0 180px 0;
+        width: 200px;
+    }
 
     .logobox {
         display: none;
