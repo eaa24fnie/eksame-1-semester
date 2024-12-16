@@ -33,6 +33,14 @@ body {
     font-family: var(--font);
 }
 
+a:visited {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
 h3 {
     font-family: var(--headline);
     font-size: 2.8rem;
@@ -244,7 +252,7 @@ header .navbar ul li ul li ul {
 .logobox {
     background: var(--white);
     width: 20%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -256,7 +264,7 @@ header .navbar ul li ul li ul {
 }
 
 .logobox .begivenhed h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .logobox .naeste {
@@ -268,7 +276,7 @@ header .navbar ul li ul li ul {
     padding-top: 10px;
 }
 
-.logobox .naeste h3:nth-child(4) {
+.logobox .naeste h3:nth-child(5) {
     padding-bottom: 20px
 }
 
@@ -295,7 +303,7 @@ header .navbar ul li ul li ul {
     height: 70vh;
     overflow: hidden;
     display: flex;
-    background-image: url(/img/forside-billede-logo.jpg);
+    background-image: url(/img/forside-billede-logo.webp);
     background-blend-mode: multiply;
     background-color: var(--primary-color);
     background-repeat:no-repeat;
@@ -354,6 +362,10 @@ header .navbar ul li ul li ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+a.button:visited {
+    color: var(--white);
 }
 
 .h3 {
@@ -421,11 +433,12 @@ header .navbar ul li ul li ul {
 }
 
 .citat svg {
-    fill: var(--primary-color);
+    fill: var(--secondary-color);
 }
 
 .citation:nth-child(3) {
     float: right;
+    padding-top: 10px;
 }
 
 .mister section h4 {
@@ -440,7 +453,7 @@ header .navbar ul li ul li ul {
 }
 
 .highlight {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 5rem;
     font-family: var(--headline);
 }
@@ -616,7 +629,7 @@ header .navbar ul li ul li ul {
 
 .insta {
     background: var(--white);
-    height: 120vh;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -633,8 +646,7 @@ header .navbar ul li ul li ul {
 
 .insta .feed {
     height: auto;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
+    padding-bottom: 25%;
 }
 
 .post {
@@ -657,6 +669,7 @@ header .navbar ul li ul li ul {
 
 .insta .citat {
     width: auto;
+    margin-bottom: 3%;
 }
 
 .insta .citat h3 {
