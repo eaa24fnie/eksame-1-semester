@@ -1,15 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Staatliches&display=swap');
+
 @font-face {
-    font-family: 'Helvetica';
+    font-family: 'Staatliches';
     font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica'), url('/font/Helvetica.woff') format('woff');
-}
-    
-@font-face {
-        font-family: 'Helvetica Compressed';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Helvetica Compressed'), url('/font/helvetica-compressed-5871d14b6903a.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    src: url('your-font.woff2') format('woff2');
 }
 
 * {
@@ -24,8 +20,8 @@
     --secondary-color: #dd5211;
     --black: #0c1309;
     --white:#f2f2f2;
-    --font: "Helvetica";
-    --headline: "Helvetica Compressed";
+    --font: "Open Sans", sans-serif;
+    --headline: "Staatliches", sans-serif;
 }
 
 body {
@@ -93,7 +89,7 @@ header .navbar ul li a {
     font-size: 1.5rem;
     padding: 0 0 20px 20px;
     display: block;
-    color: var(--black);
+    color: var(--white);
     width: 100%;
 }
 
@@ -169,7 +165,7 @@ header .navbar {
         width: 300px;
         background: var(--secondary-color);
         display: none;
-        color: var(--black);
+        color: var(--white);
         font-family: var(--headline);
         height: auto;
         border-radius: 0 0 0 1000px;
@@ -183,7 +179,8 @@ header .navbar ul li {
 header .navbar ul li ul {
         position: relative;
         width: 100%;
-        color: black;
+        color: var(--white);
+        
 }
 
 header .navbar ul li ul li ul {
@@ -206,6 +203,7 @@ header .navbar ul li ul li ul {
         width: 60px;
         background: var(--primary-color);
 }
+
 
 
 /* NAVBAR SLUT */
@@ -241,7 +239,7 @@ header .navbar ul li ul li ul {
 
 .oplevtitel {
     color: var(--white);
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,11 +250,11 @@ header .navbar ul li ul li ul {
 }
 
 .oplevtitel h3 {
-    font-size: 10rem;
+    font-size: 20rem;
 }
 
 .oplevtitel h4 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .overskrift {
@@ -279,7 +277,6 @@ header .navbar ul li ul li ul {
     z-index: 2;
     line-height: 80%;
     padding-left: 3%;
-    letter-spacing: 1vh;
     text-wrap: balance;
     font-size: 30vh;
 }
@@ -434,7 +431,6 @@ header .navbar ul li ul li ul {
     position: absolute;
     text-align: center;
     font-size: 3.5rem;
-    letter-spacing: 5px;
   }
 
   .grid-item img {
@@ -530,7 +526,6 @@ header .navbar ul li ul li ul {
     font-size: 3rem;
     font-family: var(--headline);
     color: var(--white);
-    letter-spacing: 2px;
 }
 
 .radar p {
@@ -715,7 +710,6 @@ input[type=submit]:hover {
         z-index: 2;
         line-height: 80%;
         padding-left: 3%;
-        letter-spacing: 1vh;
         text-wrap: balance;
         font-size: 30vh;
     }
@@ -764,7 +758,6 @@ input[type=submit]:hover {
         position: absolute;
         text-align: center;
         font-size: 4rem;
-        letter-spacing: 5px;
       }
     
       .grid-item img {
@@ -800,7 +793,6 @@ input[type=submit]:hover {
         font-size: 3rem;
         font-family: var(--headline);
         color: var(--white);
-        letter-spacing: 1px;
         line-height: 80%;
         padding-top: 20px;
     }
@@ -908,7 +900,6 @@ input[type=submit]:hover {
         z-index: 2;
         line-height: 80%;
         padding-left: 3%;
-        letter-spacing: 1vh;
         text-wrap: balance;
         font-size: 30vh;
     }
@@ -957,7 +948,6 @@ input[type=submit]:hover {
         position: absolute;
         text-align: center;
         font-size: 3rem;
-        letter-spacing: 5px;
       }
     
       .grid-item img {
@@ -993,7 +983,6 @@ input[type=submit]:hover {
         font-size: 3rem;
         font-family: var(--headline);
         color: var(--white);
-        letter-spacing: 1px;
         line-height: 80%;
         padding-top: 20px;
     }
@@ -1110,7 +1099,6 @@ input[type=submit]:hover {
         z-index: 2;
         line-height: 80%;
         padding-left: 3%;
-        letter-spacing: 1vh;
         text-wrap: balance;
         font-size: 30vh;
     }
@@ -1159,7 +1147,6 @@ input[type=submit]:hover {
         position: absolute;
         text-align: center;
         font-size: 2rem;
-        letter-spacing: 5px;
       }
     
       .grid-item img {
@@ -1195,7 +1182,6 @@ input[type=submit]:hover {
         font-size: 3rem;
         font-family: var(--headline);
         color: var(--white);
-        letter-spacing: 1px;
         line-height: 80%;
         padding-top: 20px;
     }

@@ -1,15 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Staatliches&display=swap');
+
 @font-face {
-    font-family: 'Helvetica';
+    font-family: 'Staatliches';
     font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica'), url('/font/Helvetica.woff') format('woff');
-}
-    
-@font-face {
-        font-family: 'Helvetica Compressed';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Helvetica Compressed'), url('/font/helvetica-compressed-5871d14b6903a.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    src: url('your-font.woff2') format('woff2');
 }
 
 * {
@@ -24,8 +20,8 @@
     --secondary-color: #dd5211;
     --black: #0c1309;
     --white:#f2f2f2;
-    --font: "Helvetica";
-    --headline: "Helvetica Compressed";
+    --font: "Open Sans", sans-serif;
+    --headline: "Staatliches", sans-serif;
 }
 
 body {
@@ -103,7 +99,7 @@ header .navbar ul li a:visited {
 }
 
 header .navbar ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 header .navbar ul li ul {
@@ -167,9 +163,9 @@ header .navbar {
         right: 0;
         padding: 120px 0 240px 0;
         width: 300px;
-        background: var(--primary-color);
+        background: var(--secondary-color);
         display: none;
-        color: var(--black);
+        color: var(--white);
         font-family: var(--headline);
         height: auto;
         border-radius: 0 0 0 1000px;
@@ -183,7 +179,7 @@ header .navbar ul li {
 header .navbar ul li ul {
         position: relative;
         width: 100%;
-        color: black;
+        color: var(--white);
 }
 
 header .navbar ul li ul li ul {
@@ -204,8 +200,9 @@ header .navbar ul li ul li ul {
 
 .menubillede {
         width: 60px;
-        background: var(--secondary-color);
+        background: var(--primary-color);
 }
+
 
 
 /* NAVBAR SLUT */
@@ -263,9 +260,8 @@ header .navbar ul li ul li ul {
     color: var(--white);
     font-family: var(--headline);
     z-index: 2;
-    font-size: 30vh;
+    font-size: 20rem;
     line-height: 80%;
-    letter-spacing: 1vh;
 }
 
 .landing .main .intro {
