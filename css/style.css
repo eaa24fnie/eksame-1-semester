@@ -50,7 +50,7 @@ h3 {
 header {
     display: flex;
     align-items: center;
-    flex-direction: reverse;
+    flex-direction: column-reverse;
     gap: 25px;
     top: 0;
     left: 0;
@@ -294,7 +294,7 @@ header .navbar ul li ul li ul {
     color: var(--white);
 }
 
-.landing main {
+.landing .main {
     width: 100%;
     height: 100vh;
 }
@@ -329,7 +329,7 @@ header .navbar ul li ul li ul {
     color: var(--white);
 }
 
-.landing main .intro {
+.landing .main .intro {
     height: 30vh;
     display: flex;
     background-color: var(--black);
@@ -338,7 +338,7 @@ header .navbar ul li ul li ul {
     justify-content: space-evenly;
 }
 
-.landing main .intro h1 {
+.landing .main .intro h1 {
     color: var(--white);
     font-family: var(--font);
     text-transform: uppercase;
@@ -655,7 +655,7 @@ a.button:visited {
     height: 60vh;
     padding: 20vh 10px 0 10px ;
     opacity: 30%;
-    scale: 0.9;
+    transform: scale(0.9);
     transition: 0.2s;
 }
 
@@ -665,7 +665,7 @@ a.button:visited {
 
 .post:hover {
     opacity: 100%;
-    scale: 1;
+    transform: scale(1);
 }
 
 .insta .citat {
@@ -834,17 +834,17 @@ input[type=submit]:hover {
         font-size: calc(10vh + 10vh);
     }
 
-    .landing main .intro h1 {
+    .landing .main .intro h1 {
         font-size: 1.3rem;
     }
 
-    .landing main .intro {
+    .landing .main .intro {
         justify-content: center;
         padding: 0 5vh;
         align-items: center;
     }
 
-    .landing main .intro .button {
+    .landing .main .intro .button {
         width:100%;
         font-size: 2.5rem;
         margin-top: 20px;
@@ -1027,17 +1027,17 @@ input[type=submit]:hover {
         font-size: calc(10vh + 10vh);
     }
 
-    .landing main .intro h1 {
+    .landing .main .intro h1 {
         font-size: 1.3rem;
     }
 
-    .landing main .intro {
+    .landing .main .intro {
         justify-content: center;
         padding: 0 5vh;
         align-items: center;
     }
 
-    .landing main .intro .button {
+    .landing .main .intro .button {
         width:100%;
         font-size: 2.5rem;
         margin-top: 20px;
