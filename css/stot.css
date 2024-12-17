@@ -164,6 +164,7 @@ header .navbar {
         padding: 120px 0 240px 0;
         width: 300px;
         background: var(--secondary-color);
+        outline: solid 6px var(--white);
         display: none;
         color: var(--white);
         font-family: var(--headline);
@@ -219,12 +220,12 @@ header .navbar ul li ul li ul {
 }
 
 .logo-two {
-    width: 10%;
+    width: 130px;
     height: auto;
     display: flex;
-    margin: 20px 0 0 20px;
     position: absolute;
     fill: var(--white);
+    margin: 2% 0 0 2%;
 }
 
 .logobox a {
@@ -294,11 +295,9 @@ header .navbar ul li ul li ul {
     text-transform: uppercase;
     font-family: var(--headline);
     width: 500px;
-    padding-bottom: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 100%;
 }
 
 .h3 {
@@ -315,10 +314,11 @@ header .navbar ul li ul li ul {
     stroke: var(--white);
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 10px;
+    stroke-width: 5px;
     width: 6%;
     position: absolute;
     bottom: 10%;
+    opacity: 0.5;
 }
 
 
