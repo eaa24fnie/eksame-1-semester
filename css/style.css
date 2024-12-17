@@ -1,81 +1,50 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Staatliches&display=swap);
-
-.logo, header, header a {
-    display: flex
-}
-
-.logobox .naeste a, .menubillede, header .navbar ul li ul {
-    background: var(--primary-color)
-}
-
-.absolute, .logo-two, .overskrift img, .square, header .navbar, header label {
-    position: absolute
-}
-
-.logobox, .mister, .naeste p, .overskrift, header .navbar {
-    overflow: hidden
-}
-
-.button, .hojre p, .landing .main .intro h1, .mister section h3, .mister section h4, .ned p, h3, header .navbar ul li a {
-    text-transform: uppercase
-}
-
-.hojre .button, .logobox .naeste a, .ned .button, a, header .navbar ul li a {
-    text-decoration: none
-}
-
-.feed, .naeste p {
-    white-space: nowrap
-}
-
-*, .container input {
-    box-sizing: border-box
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Staatliches&display=swap');
 
 @font-face {
-    font-family: Staatliches;
+    font-family: 'Staatliches';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('your-font.woff2') format('woff2')
+    src: url('your-font.woff2') format('woff2');
 }
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 :root {
     --primary-color: #284221;
     --secondary-color: #dd5211;
     --black: #0c1309;
-    --white: #f2f2f2;
+    --white:#f2f2f2;
     --font: "Open Sans", sans-serif;
-    --headline: "Staatliches", sans-serif
+    --headline: "Staatliches", sans-serif;
 }
 
 body {
     background-color: var(--white);
-    font-family: var(--font)
-}
-
-.button, .container h2, .highlight, .logobox .naeste a, .mister section h3, .overskrift h2, h3, header, header .navbar {
-    font-family: var(--headline)
+    font-family: var(--font);
 }
 
 a:visited {
-    color: inherit
+    color: inherit;
 }
 
-.absolute-white, .button, .logobox .naeste a, .logobox .naeste a:visited, .mister section h3, .mister section h4, .overskrift h2:first-child, a.button:visited, form, header, header .navbar, header .navbar ul li a, header .navbar ul li ul, input, select, textarea {
-    color: var(--white)
+a {
+    text-decoration: none;
 }
 
 h3 {
-    font-size: 2.8rem
+    font-family: var(--headline);
+    font-size: 2.8rem;
+    text-transform: uppercase;
 }
 
 header {
+    display: flex;
     align-items: center;
     flex-direction: column-reverse;
     gap: 25px;
@@ -83,141 +52,199 @@ header {
     left: 0;
     right: 0;
     justify-content: space-between;
+    color: var(--white);
+    font-family: var(--headline);
     position: fixed;
-    z-index: 1000
+    z-index: 1000;
 }
 
 header a {
     width: 20%;
-    justify-content: center
+    display: flex;
+    justify-content: center;
 }
 
-.sted, body img, header .navbar ul li ul li {
-    width: 100%
+body img {
+    width: 100%;
 }
+
+
+/* NAVBAR */
 
 header nav .logo {
     width: 60vh;
     margin: 20px;
     display: none;
-    fill: var(--white)
 }
 
+header nav .logo {
+    fill: var(--white);
+}
+
+
 header .navbar ul {
-    list-style-type: none
+    list-style-type: none;
 }
 
 header .navbar ul li {
     position: relative;
     float: left;
-    width: 100%
 }
 
 header .navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
     font-size: 1.5rem;
     padding: 0 0 20px 20px;
     display: block;
-    width: 100%
+    color: var(--white);
+    width: 100%;
 }
 
 header .navbar ul li a:visited {
-    color: inherit;
-    text-decoration: none
+   color: inherit;
+   text-decoration: none;
 }
 
 header .navbar ul li a:hover {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 header .navbar ul li ul {
+    position: absolute;
     left: 0;
+    width: 200px;
+    background: var(--primary-color);
     display: none;
-    position: relative;
-    width: 100%
+}
+
+header .navbar ul li ul li {
+    width: 100%;
 }
 
 header .navbar ul li ul li ul {
+    left: 200px;
     top: 0;
-    width: 100%;
-    left: 0
 }
 
-header .navbar ul li:focus-within>ul, header .nvabar ul li:hover>ul {
-    display: block
+header .navbar ul li:focus-within > ul ,
+header .nvabar ul li:hover > ul {
+    display: block;
 }
 
-#menu-bar, .navbar li:hover ul ul {
-    display: none
+.navbar li:hover ul ul {
+    display: none;
 }
-
+  
 .navbar li:hover ul {
-    display: block
+    display: block;
+}
+
+#menu-bar {
+    display: none;
 }
 
 header label {
     font-size: 20px;
     color: #333;
     cursor: pointer;
-    display: block;
-    z-index: 1000;
-    right: 30px;
-    top: 30px
+    display: none;
 }
 
 header .navbar ul li ul li a {
     font-weight: 200;
     font-size: 1.3rem;
-    padding-left: 40px
+    padding-left: 40px;
+}
+
+header label {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        right: 30px;
+        top: 30px;
 }
 
 header .navbar {
-    top: 0;
-    right: 0;
-    padding: 120px 0 240px;
-    width: 300px;
-    background: var(--secondary-color);
-    display: none;
-    height: auto;
-    border-radius: 0 0 0 1000px
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 120px 0 240px 0;
+        width: 300px;
+        background: var(--secondary-color);
+        display: none;
+        color: var(--white);
+        font-family: var(--headline);
+        height: auto;
+        border-radius: 0 0 0 1000px;
+        overflow: hidden;
 }
 
-#menu-bar:checked~.navbar {
-    display: block;
-    transition: .2s
+header .navbar ul li {
+        width:100%;
 }
 
-#menu-bar:not(:checked)~.navbar {
-    display: block;
-    top: -350px;
-    transition: .6s
+header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+        color: var(--white);
+        
+}
+
+header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+}
+
+#menu-bar:checked ~ .navbar {
+        display: block;
+        transition: 0.2s;
+}
+
+#menu-bar:not(:checked) ~ .navbar {
+        display: block;
+        top: -350px;
+        transition: 0.6s;     
 }
 
 .menubillede {
-    width: 60px
+        width: 60px;
+        background: var(--primary-color);
 }
+
+
+
+/* NAVBAR SLUT */
+
+
+
+/* LANDING PAGE */
 
 .logo {
     width: 50%;
     height: auto;
-    padding: 50px 0
+    display: flex;
+    padding: 50px 0;
 }
 
 .logo-two {
     width: 20%;
     height: auto;
+    display: flex;
     display: none;
     margin: 20px 0 0 20px;
-    fill: var(--white)
+    position: absolute;
+    fill: var(--white);
 }
 
-.gallery, .logobox a {
+.logobox a {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .landing {
     display: flex;
-    padding-bottom: 10vh
+    padding-bottom: 10vh;
 }
 
 .logobox {
@@ -226,73 +253,83 @@ header .navbar {
     height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
-}
-
-.overskrift, .overskrift img {
-    height: 70vh;
-    background-color: var(--primary-color)
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .logobox .begivenhed {
-    padding: 10% 0 0 30px
+    padding: 10% 0 0 30px;
 }
 
 .logobox .begivenhed h3 {
-    font-size: 1.6rem
+    font-size: 1.6rem;
 }
 
 .logobox .naeste {
-    padding: 5% 0 0 30px
+    padding: 5% 0 0 30px;
 }
 
 .logobox .naeste h3 {
     font-size: 1.4rem;
-    padding-top: 10px
+    padding-top: 10px;
 }
 
-.logobox .naeste h3:nth-child(5), .mister section article {
+.logobox .naeste h3:nth-child(5) {
     padding-bottom: 20px
 }
 
 .logobox .naeste a {
+    text-decoration: none;
+    background: var(--primary-color);
+    color: var(--white);
     padding: 5px 10px;
     font-size: 1.5rem;
-    width: 90%
+    font-family: var(--headline);
+    width: 90%;
+}
+
+.logobox .naeste a:visited {
+    color: var(--white);
 }
 
 .landing .main {
     width: 100%;
-    height: 100vh
+    height: 100vh;
 }
 
 .overskrift {
+    height: 70vh;
+    overflow: hidden;
     display: flex;
-    background-repeat: no-repeat;
+    background-color: var(--primary-color);
+    background-repeat:no-repeat;
     background-size: auto 100vh;
     background-position: right;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
 }
 
 .overskrift img {
+    position: absolute;
     object-fit: cover;
-    mix-blend-mode: multiply
-}
-
-.container input, input[type=submit] {
-    background: rgba(0, 0, 0, 0);
-    border: 1px solid var(--white)
+    height: 70vh;
+    mix-blend-mode: multiply;
+    background-color: var(--primary-color);
 }
 
 .overskrift h2 {
     color: var(--secondary-color);
+    font-family: var(--headline);
     z-index: 2;
     line-height: 80%;
     padding-left: 3%;
     text-wrap: balance;
-    font-size: 40vh
+    font-size: 40vh;
+}
+
+.overskrift h2:nth-child(1) {
+    color: var(--white);
 }
 
 .landing .main .intro {
@@ -301,612 +338,865 @@ header .navbar {
     background-color: var(--black);
     padding-left: 3%;
     flex-direction: column;
-    justify-content: space-evenly
-}
-
-.button, .mister {
-    justify-content: center
+    justify-content: space-evenly;
 }
 
 .landing .main .intro h1 {
     color: var(--white);
     font-family: var(--font);
-    font-size: 2rem
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 .naeste p {
-    text-overflow: ellipsis
+    white-space: nowrap;
+    overflow: hidden;  
+    text-overflow: ellipsis;
 }
 
 .button {
     background-color: var(--primary-color);
+    color: var(--white);
     font-size: 3rem;
+    text-transform: uppercase;
+    font-family: var(--headline);
     width: 500px;
     padding: 1% 0;
     display: flex;
-    align-items: center
+    justify-content: center;
+    align-items: center;
 }
 
-.mister, footer {
-    background: var(--black)
+a.button:visited {
+    color: var(--white);
 }
 
 .h3 {
     height: 10vh;
-    text-align: center
+    text-align: center;
 }
+
+.absolute {
+    position: absolute;
+}
+
+
+/* LANDING PAGE SLUT */
+
+
+/* MISTER START */
+
 
 .square {
     width: 80%;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-top: 100px solid var(--white)
+    height: 0; 
+    border-left: 100px solid transparent; 
+    border-right: 100px solid transparent; 
+    border-top: 100px solid var(--white);
+    position: absolute;
 }
 
-.losning, .mister {
+.mister {
+    background: var(--black);
     height: 100vh;
-    display: flex
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .mister section {
-    padding: 10% 50px 0;
-    width: 50%
+    padding: 10% 50px 0 50px;
+    width: 50%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
 }
 
 .gallery img {
     width: auto;
-    height: 80%
+    height: 80%;
 }
 
 .mister section h3 {
+    color: var(--white);
+    font-family: var(--headline);
     line-height: 100%;
-    font-size: 2.4rem
+    font-size: 2.4rem;
+    text-transform: uppercase;
 }
 
 .citat {
-    width: 60vh
+    width: 60vh;
 }
 
 .citation {
-    width: 30px
+    width: 30px;
 }
 
 .citat svg {
-    fill: var(--secondary-color)
+    fill: var(--secondary-color);
 }
 
 .citation:nth-child(3) {
     float: right;
-    padding-top: 10px
+    padding-top: 10px;
 }
 
 .mister section h4 {
+    color: var(--white);
     font-family: var(--font);
-    font-size: 2.5rem
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.mister section article {
+    padding-bottom: 20px;
 }
 
 .highlight {
     color: var(--secondary-color);
-    font-size: 5rem
+    font-size: 5rem;
+    font-family: var(--headline);
 }
 
 .h3-black {
     background-color: var(--black);
-    color: var(--white)
+    color: var(--white);
 }
 
-.absolute-secondary, .h3-red {
-    color: var(--secondary-color)
-}
+
+/* MISTER SLUTTER */
+
+
+
+/* LOSNING STARTER */
+
 
 .black {
-    border-top: 100px solid var(--black)
+    border-top: 100px solid var(--black);
+}
+
+.absolute-white {
+    color: var(--white);
 }
 
 .padding {
-    padding-top: 10%
+    padding-top: 10%;
 }
 
 .losning {
     background: var(--primary-color);
+    height: 100vh;
+    display: flex;
     justify-content: center;
-    padding-bottom: 5%
-}
-
-.column, .losning .mulighed {
-    background: var(--white);
-    overflow: hidden
-}
-
-.hojre, .ned {
-    padding: 20px
+    padding-bottom: 5%;
 }
 
 .losning .mulighed {
     display: flex;
     height: 50%;
-    margin-right: 20px
+    background: var(--white);
+    overflow: hidden;
+    margin-right: 20px;
 }
 
 .margin {
-    margin: 25px
+    margin: 25px;
 }
 
 .mulighed h3 {
-    font-size: 2rem
-}
+    font-size: 2rem;
+} 
 
 .venstre {
     flex: 1;
     max-width: 40%;
-    overflow: hidden
+    overflow: hidden;
 }
-
-.op img, .venstre img {
+   
+.venstre img {
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .hojre {
     flex: 2;
     max-width: 60%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
 }
 
-.three, .two {
-    flex-direction: column
-}
-
-.hojre h3, .ned h3 {
+.hojre h3 {
     font-size: 2.4rem;
     line-height: 100%;
-    padding-bottom: 2%
+    padding-bottom: 2%;
 }
 
-.hojre p, .ned p {
+.hojre p {
     font-size: 1.6rem;
-    padding-bottom: 2%
+    text-transform: uppercase;
+    padding-bottom: 2%;
 }
 
 .hojre .button {
     width: auto;
-    display: flex
+    text-decoration: none;
+    display: flex;
 }
 
 .two {
     display: flex;
+    flex-direction: column;
     width: 50%;
-    gap: 20px
+    gap: 20px;
 }
 
 .one {
     display: flex;
-    width: 25%
+    width: 25%;
 }
 
 .three {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    display: none
-}
-
-.column, .nyhedsbrev {
-    flex-direction: column
-}
-
-.column, .feed, .footer, .insta, .nyhedsbrev, footer {
-    display: flex
+    display: none;
 }
 
 .column {
+    flex-direction: column;
     width: 100%;
-    height: 100%
+    display: flex;
+    height: 100%;
+    background: var(--white);
+    overflow: hidden;
 }
 
 .op {
     flex: 1;
     max-height: 50%;
-    overflow: hidden
+    overflow: hidden;
+}
+   
+.op img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .ned {
     flex: 2;
-    max-height: 40%
+    max-height: 40%;
+    padding: 20px;
+}
+
+.ned h3 {
+    font-size: 2.4rem;
+    line-height: 100%;
+    padding-bottom: 2%;
+}
+
+.ned p {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-bottom: 2%;
 }
 
 .ned .button {
-    width: auto
+    width: auto;
+    text-decoration: none;
 }
 
 .h3-red {
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
+
+/* LOSNING SLUTTER */
+
+
+/* INSTA STARTER */
+
+
 .red {
-    border-top: 100px solid var(--primary-color)
+    border-top: 100px solid var(--primary-color);
+}
+
+.absolute-secondary {
+    color: var(--secondary-color)
 }
 
 .insta {
     background: var(--white);
     height: auto;
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .feed {
     justify-content: flex-start;
+    display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    height: 80%
+    white-space: nowrap;
+    height: 80%;
 }
 
 .insta .feed {
     height: auto;
-    padding-bottom: 25%
+    padding-bottom: 25%;
 }
 
 .post {
     width: auto;
     height: 60vh;
-    padding: 20vh 10px 0;
+    padding: 20vh 10px 0 10px ;
     opacity: 30%;
-    transform: scale(.9);
-    transition: .2s
+    transform: scale(0.9);
+    transition: 0.2s;
 }
 
 .post iframe {
-    width: 30vh
+    width: 30vh;
 }
 
 .post:hover {
     opacity: 100%;
-    transform: scale(1)
+    transform: scale(1);
 }
 
 .insta .citat {
     width: auto;
-    margin-bottom: 3%
+    margin-bottom: 3%;
 }
 
 .insta .citat h3 {
-    line-height: 100%
+    line-height: 100%;
+}
+
+
+/* INSTA SLUTTER */
+
+
+/* FOOTER STARTER */
+
+
+footer {
+    background: var(--black);
+    display: flex;
 }
 
 .nyhedsbrev {
     width: 40%;
     background-color: var(--primary-color);
-    padding: 20px 80px 50px;
-    justify-content: space-between
+    padding: 20px 80px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .nyhedsbrev p {
     color: var(--white);
-    font-size: .8rem
+    font-size: 0.8rem;
 }
-
+  
+form {
+    color: var(--white);
+}
+  
 .container {
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 .container h2 {
+    font-family: var(--headline);
     font-size: 4rem;
     vertical-align: top;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 .container p {
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
-
+  
 .container input {
     width: 100%;
     padding: 12px;
-    display: inline-block
+    display: inline-block;
+    border: 1px solid var(--white);
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.0);
 }
-
+  
 input[type=submit] {
-    color: #fff;
-    width: 40%
+    background: rgba(0,0,0,0.0);
+    border: 1px solid var(--white);
+    color: white;
+    width: 40%;
 }
-
+  
 input[type=submit]:hover {
     background-color: var(--secondary-color);
     color: var(--black);
-    border: none
+    border: none;
 }
 
 ::placeholder {
     color: var(--white);
-    opacity: 1
+    opacity: 1;
+  }
+
+  input, select, textarea{
+    color: var(--white)
 }
 
 .footer {
+    display: flex;
     flex-direction: column;
-    width: 60%
+    width: 60%;
 }
 
 .some {
-    padding: 40px 80px 0
+    padding: 40px 80px 0 80px;
 }
 
 .some img {
     width: auto;
     height: 70px;
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 .kontakt {
-    padding: 40px 80px 50px;
-    color: #fff
+    padding: 40px 80px 50px 80px;
+    color: white;
+}
+
+.sted {
+    width: 100%;
 }
 
 .sted iframe {
-    width: 100%;
-    height: 40vh;
-    border: none
+  width: 100%;  
+  height: 40vh;
+  border: none;
 }
 
-@media only screen and (max-width:1068px) {
+
+
+
+
+
+
+
+
+/* For larger mobile devices (landscape) */
+@media only screen and (max-width: 1068px) {
+
+    
     .logobox {
-        display: none
+        display: none;
     }
+
 }
 
-@media only screen and (max-width:767px) {
-    .logo-two, header nav .logo {
-        display: block
-    }
 
-    .footer, .losning, .mister section, .mister section article, .nyhedsbrev, .overskrift img, .three {
-        width: 100%
-    }
+/* For larger mobile devices (landscape) */
+@media only screen and (max-width: 767px) {
 
     .logo-two {
-        color: #fff
+        display: block;
+        color: white;
     }
 
-    .insta .square, .logobox, .losning .square, .mister .square, .one, .two {
-        display: none
+    .logobox {
+        display: none;
     }
 
     .landing {
-        height: 100vh
+        height: 100vh;
+    }
+
+    header nav .logo {
+        display: block;
     }
 
     .overskrift {
         justify-content: flex-end;
         align-items: center;
-        overflow: hidden
+        overflow: hidden;
     }
-
+    
     .overskrift h2 {
-        font-size: calc(10vh + 10vh)
+        font-size: calc(10vh + 10vh);
     }
 
     .overskrift h2:nth-child(2) {
-        padding-bottom: 10%
+        padding-bottom: 10%;
+    }
+
+    .overskrift img {
+        width: 100%;
     }
 
     .landing .main .intro h1 {
-        font-size: 1.3rem
+        font-size: 1.3rem;
     }
 
     .landing .main .intro {
         justify-content: center;
         padding: 0 5vh;
-        align-items: center
-    }
-
-    .losning, .mister {
-        flex-direction: column;
-        padding: 10% 0;
-        height: auto
+        align-items: center;
     }
 
     .landing .main .intro .button {
-        width: 100%;
+        width:100%;
         font-size: 2.5rem;
-        margin-top: 20px
+        margin-top: 20px;
     }
 
+
+
     .mister {
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around
+        justify-content: space-around;
+        height: auto;
+        padding: 10% 0;
     }
 
     .mister section img {
-        width: 90%
+        width: 90%;
+    }
+    
+    .mister section {
+        width: 100%;
+    }
+
+    .mister section article {
+        width: 100%;
     }
 
     .mister section h3 {
-        font-size: 1.8rem
+        font-size: 1.8rem;
     }
 
-    .losning {
-        display: flex;
-        align-items: center
-    }
-
-    .losning .mulighed {
-        margin: 20px
-    }
-
-    .three {
-        display: block
-    }
-
-    .insta .citat h3, .mulighed article a, .mulighed article h3 {
-        font-size: 2rem
-    }
-
-    .mulighed article p {
-        font-size: 1.5rem
-    }
-
-    .insta {
-        padding: 10% 0
-    }
-
-    .insta .absolute-secondary {
-        color: var(--black)
-    }
-
-    .insta .feed .post {
-        padding: 0
-    }
-
-    .insta .feed {
-        height: auto;
-        padding-bottom: 5%;
-        margin-bottom: 5%
-    }
-
-    footer {
-        flex-direction: column;
-        justify-content: center
-    }
-
-    .some {
-        display: flex
+    .mister .square {
+        display: none;
     }
 
     .absolute {
         position: relative;
         color: var(--white);
+        font-size: 2rem;
+    }
+
+
+
+
+
+    .losning {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: auto;
+        padding: 10% 0;
+    }
+
+    .losning .mulighed {
+        margin: 20px;
+    }
+
+    .losning .square {
+        display: none;
+    }
+
+    .three {
+        width: 100%;
+        display: block;
+    }
+
+    .mulighed article h3 {
+        font-size: 2rem;
+    }
+
+    .mulighed article p {
+        font-size: 1.5rem;
+    }
+
+    .mulighed article a {
+        font-size: 2rem;
+    }
+
+    .two {
+        display: none;
+    }
+
+    .one {
+        display: none;
+    }
+
+
+
+
+
+    .insta {
+        padding: 10% 0;
+    }
+
+    .insta .square {
+        display: none;
+    }
+
+    .insta .absolute-secondary {
+        color: var(--black);
+    }
+
+    .insta .feed .post {
+        padding: 0;
+    }
+
+    .insta .feed {
+        height: auto;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+
+    .insta .citat h3 {
+        font-size: 2rem;
+    }
+
+
+
+
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nyhedsbrev {
+        width: 100%;
+    }
+
+    .some {
+        display: flex;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+
+    .absolute {
         font-size: 3rem;
         padding-top: 20px;
         text-align: center;
-        line-height: 100%
+        line-height: 100%;
     }
+
 }
 
+
+
+/* For small mobile devices (portrait) */
 @media(max-width:480px) {
-    .logo-two, header nav .logo {
-        display: block
-    }
 
     header .navbar {
-        padding: 120px 0 180px;
-        width: 200px
-    }
-
-    .footer, .losning, .mister section, .mister section article, .nyhedsbrev, .overskrift img, .three {
-        width: 100%
+        padding: 120px 0 180px 0;
+        width: 200px;
     }
 
     .logo-two {
-        color: #fff
+        display: block;
+        color: white;
     }
 
-    .insta .square, .logobox, .losning .square, .mister .square, .one, .two {
-        display: none
+    .logobox {
+        display: none;
+    }
+
+    header nav .logo {
+        display: block;
     }
 
     .overskrift {
         justify-content: flex-end;
         align-items: center;
-        overflow: hidden
+        overflow: hidden;
     }
-
+    
     .overskrift h2 {
-        font-size: calc(8vh + 8vh)
+        font-size: calc(8vh + 8vh);
     }
 
     .overskrift h2:nth-child(2) {
-        padding-bottom: 10%
+        padding-bottom: 10%;
+    }
+
+    .overskrift img {
+        width: 100%;
     }
 
     .landing .main .intro h1 {
-        font-size: 1.3rem
+        font-size: 1.3rem;
     }
 
     .landing .main .intro {
         justify-content: center;
         padding: 0 5vh;
-        align-items: center
-    }
-
-    .losning, .mister {
-        flex-direction: column;
-        padding: 10% 0;
-        height: auto
+        align-items: center;
     }
 
     .landing .main .intro .button {
-        width: 100%;
+        width:100%;
         font-size: 2.5rem;
-        margin-top: 20px
+        margin-top: 20px;
     }
 
+
+
     .mister {
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around
+        justify-content: space-around;
+        height: auto;
+        padding: 10% 0;
     }
 
     .mister section img {
-        width: 90%
+        width: 90%;
+    }
+    
+    .mister section {
+        width: 100%;
+    }
+
+    .mister section article {
+        width: 100%;
     }
 
     .mister section h3 {
-        font-size: 1.8rem
+        font-size: 1.8rem;
     }
 
-    .losning {
-        display: flex;
-        align-items: center
-    }
-
-    .losning .mulighed {
-        margin: 20px
-    }
-
-    .three {
-        display: block
-    }
-
-    .insta .citat h3, .mulighed article a, .mulighed article h3 {
-        font-size: 2rem
-    }
-
-    .mulighed article p {
-        font-size: 1.5rem
-    }
-
-    .insta {
-        padding: 10% 0
-    }
-
-    .insta .absolute-secondary {
-        color: var(--black)
-    }
-
-    .insta .feed .post {
-        padding: 0
-    }
-
-    .insta .feed {
-        height: auto;
-        padding-bottom: 5%;
-        margin-bottom: 5%
-    }
-
-    footer {
-        flex-direction: column;
-        justify-content: center
-    }
-
-    .some {
-        display: flex
+    .mister .square {
+        display: none;
     }
 
     .absolute {
         position: relative;
         color: var(--white);
+        font-size: 2rem;
+    }
+
+
+
+
+
+    .losning {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: auto;
+        padding: 10% 0;
+    }
+
+    .losning .mulighed {
+        margin: 20px;
+    }
+
+    .losning .square {
+        display: none;
+    }
+
+    .three {
+        width: 100%;
+        display: block;
+    }
+
+    .mulighed article h3 {
+        font-size: 2rem;
+    }
+
+    .mulighed article p {
+        font-size: 1.5rem;
+    }
+
+    .mulighed article a {
+        font-size: 2rem;
+    }
+
+    .two {
+        display: none;
+    }
+
+    .one {
+        display: none;
+    }
+
+
+
+
+
+    .insta {
+        padding: 10% 0;
+    }
+
+    .insta .square {
+        display: none;
+    }
+
+    .insta .absolute-secondary {
+        color: var(--black);
+    }
+
+    .insta .feed .post {
+        padding: 0;
+    }
+
+    .insta .feed {
+        height: auto;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+
+    .insta .citat h3 {
+        font-size: 2rem;
+    }
+
+
+
+
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nyhedsbrev {
+        width: 100%;
+    }
+
+    .some {
+        display: flex;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .absolute {
         font-size: 3rem;
         padding-top: 20px;
         text-align: center;
-        line-height: 100%
+        line-height: 100%;
     }
+
 }
