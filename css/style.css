@@ -376,6 +376,14 @@ section.button a:visited {
     color: var(--white);
 }
 
+section.button a:visited p {
+    color: var(--white);
+}
+
+section.button a p {
+    color: var(--white);
+}
+
 .h3 {
     height: 10vh;
     text-align: center;
