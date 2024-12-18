@@ -261,7 +261,7 @@ header .navbar ul li ul li ul {
     height: 80vh;
     overflow: hidden;
     display: flex;
-    background-image: linear-gradient(to top, rgb(40, 66, 33),rgba(66, 49, 33, 0)), url(/img/scene.webp);
+    background-image: linear-gradient(to top, rgb(40, 66, 33),rgba(66, 49, 33, 0)), url(/img/koncert.webp);
     background-color: var(--primary-color);
     background-repeat:no-repeat;
     background-size: 100% auto;
