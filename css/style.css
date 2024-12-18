@@ -226,7 +226,7 @@ header .navbar ul li ul li ul {
 
 .logo {
     width: 50%;
-    height: auto;
+    height: auto; /* Bevarer højden proportionalt med bredden */
     display: flex;
     padding-top: 50px;
 }
@@ -237,7 +237,7 @@ header .navbar ul li ul li ul {
     display: flex;
     display: none;
     margin: 20px 0 0 20px;
-    position: absolute;
+    position: absolute;  /* Gør positionen absolut i forhold til containeren */
     fill: var(--white);
 }
 
@@ -262,7 +262,7 @@ header .navbar ul li ul li ul {
 }
 
 .logobox .begivenhed {
-    padding: 10% 0 0 30px;
+    padding: 10% 0 0 30px; /* Tilføjer afstand fra toppen og venstre side */
 }
 
 .logobox .begivenhed h3 {
@@ -279,7 +279,7 @@ header .navbar ul li ul li ul {
 }
 
 .logobox .naeste h3:nth-child(6) {
-    padding-bottom: 20px
+    padding-bottom: 20px /* Tilføjer ekstra afstand under det sjette element */
 }
 
 .logobox .a {
@@ -310,8 +310,8 @@ header .navbar ul li ul li ul {
     display: flex;
     background-color: var(--primary-color);
     background-repeat:no-repeat;
-    background-size: auto 100vh;
-    background-position: right;
+    background-size: auto 100vh; /* Gør baggrundsbilledet 100vh højt */
+    background-position: right; /* Positionerer baggrundsbilledet til højre */
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
@@ -323,7 +323,7 @@ header .navbar ul li ul li ul {
     height: 70vh;
     right: 0;
     width: 83%;
-    mix-blend-mode: multiply;
+    mix-blend-mode: multiply; /* Anvender en blandingstilstand på billedet */
     background-color: var(--primary-color);
 }
 
@@ -333,7 +333,7 @@ header .navbar ul li ul li ul {
     z-index: 2;
     line-height: 80%;
     padding-left: 3%;
-    text-wrap: balance;
+    text-wrap: balance;; /* Sørger for tekstlinjerne brydes balanceret */
     font-size: 38vh;
 }
 
@@ -389,7 +389,7 @@ section.button a p {
 }
 
 .h3 {
-    height: 10vh;
+    height: 10vh; /* Sætter højden til 10% af viewport højden */
     text-align: center;
 }
 
@@ -407,9 +407,9 @@ section.button a p {
 .square {
     width: 80%;
     height: 0; 
-    border-left: 100px solid transparent; 
-    border-right: 100px solid transparent; 
-    border-top: 100px solid var(--white);
+    border-left: 100px solid transparent; /* Skaber en gennemsigtig venstre kant */
+    border-right: 100px solid transparent; /* Skaber en gennemsigtig højre kant */
+    border-top: 100px solid var(--white); /* Skaber en hvid topkant og danner en trekant */
     position: absolute;
 }
 
@@ -457,12 +457,12 @@ section.button a p {
 }
 
 .citat svg {
-    fill: var(--secondary-color);
+    fill: var(--secondary-color); /* Fylder SVG'en med den sekundære farve */
 }
 
 .citation:nth-child(3) {
-    float: right;
-    padding-top: 10px;
+    float: right; /* Flytter den tredje citation til højre */
+    padding-top: 10px; /* Tilføjer afstand ovenfor */
 }
 
 .mister section h4 {
@@ -534,7 +534,7 @@ section.button a p {
 } 
 
 .venstre {
-    flex: 1;
+    flex: 1; /* Lader venstre sektion fylde 1 del af pladserne */
     max-width: 40%;
     overflow: hidden;
 }
@@ -545,7 +545,7 @@ section.button a p {
 }
 
 .hojre {
-    flex: 2;
+    flex: 2; /* Lader højre sektion fylde 2 dele af pladserne */
     max-width: 60%;
     padding: 20px;
     display: flex;
@@ -575,7 +575,7 @@ section.button a p {
     display: flex;
     flex-direction: column;
     width: 50%;
-    gap: 20px;
+    gap: 20px; /* Tilføjer mellemrum mellem elementerne */
 }
 
 .one {
@@ -650,8 +650,7 @@ section.button a p {
 
 
 .red {
-    border-top: 100px solid var(--primary-color);
-}
+    border-top: 100px solid var(--primary-color); /* Tilføjer en bred, farvet topkant baseret på variablen --primary-color */}
 
 .absolute-secondary {
     color: var(--secondary-color)
@@ -662,15 +661,15 @@ section.button a p {
     height: auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Tillader linjeskift for flexbørns elementer */
 }
 
 .feed {
     justify-content: flex-start;
     display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+    overflow-x: scroll; /* Vandret rullebjælke, hvis indholdet er bredere end containeren */
+    overflow-y: hidden; /* Skjuler lodret rullebjælke */
+    white-space: nowrap; /* Forhindrer linjeskift i indholdet */
     height: 80%;
 }
 
@@ -684,7 +683,7 @@ section.button a p {
     height: 60vh;
     padding: 20vh 10px 0 10px ;
     opacity: 30%;
-    transform: scale(0.9);
+    transform: scale(0.9); /* Gør elementet mindre */
     transition: 0.2s;
 }
 
@@ -743,7 +742,7 @@ form {
 .container h2 {
     font-family: var(--headline);
     font-size: 4rem;
-    vertical-align: top;
+    vertical-align: top; /* Justerer vertikal placering */
     color: var(--secondary-color);
 }
 
