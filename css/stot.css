@@ -596,6 +596,14 @@ input[type=submit]:hover {
         display: block;
     }
 
+
+
+    .logo-two {
+        display: block;
+        color: white;
+        width: 20%;
+    }
+
     .overskrift {
         justify-content: flex-end;
     }
@@ -625,6 +633,12 @@ input[type=submit]:hover {
         position: relative;
         color: var(--white);
         font-size: 2rem;
+    }
+
+    .overskrift {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
 
@@ -700,6 +714,11 @@ input[type=submit]:hover {
         line-height: 100%;
     }
 
+
+    .arrow {
+        width: 20%;
+    }
+
 }
 
 
@@ -712,6 +731,12 @@ input[type=submit]:hover {
         width: 200px;
     }
 
+    .logo-two {
+        display: block;
+        color: white;
+        width: 20%;
+    }
+
     .logobox {
         display: none;
     }
@@ -721,7 +746,9 @@ input[type=submit]:hover {
     }
 
     .overskrift {
-        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .overskrift h2 {
@@ -743,6 +770,10 @@ input[type=submit]:hover {
         width:100%;
         font-size: 2.5rem;
         margin-top: 20px;
+    }
+
+    .arrow {
+        width: 20%;
     }
 
 
