@@ -5,13 +5,15 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('your-font.woff2') format('woff2');
+    src: url('/staatliches/Staatliches-Regular.ttf') format('woff2');  /* Lokal skrifttype */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Nulstilling af standardmargin og padding */
+
 }
 
 
@@ -24,29 +26,30 @@
     --headline: "Staatliches", sans-serif;
 }
 
+
 body {
-    background-color: var(--white);
-    font-family: var(--font);
+    background-color: var(--white); /* Hvid baggrund for hele siden */
+    font-family: var(--font); /* Anvend standardfont til brødtekst */
 }
 
 a:visited {
-    color: inherit;
+    color: inherit; /* Arver farve i stedet for at ændre linkfarven */
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* Fjerner understregning fra links */
 }
 
 h3 {
-    font-family: var(--headline);
+    font-family: var(--headline); /* Overskriftsskrifttype */
     font-size: 2.8rem;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Gør teksten til store bogstaver */
 }
 
 header {
     display: flex;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; /* Kolonne-layout med omvendt rækkefølge */
     gap: 25px;
     top: 0;
     left: 0;
@@ -54,8 +57,8 @@ header {
     justify-content: space-between;
     color: var(--white);
     font-family: var(--headline);
-    position: fixed;
-    z-index: 1000;
+    position: fixed; /* Fastgør headeren til toppen af siden */
+    z-index: 1000; /* Sørger for, at header er over andet indhold */
 }
 
 header a {
@@ -83,7 +86,7 @@ header nav .logo {
 
 
 header .navbar ul {
-    list-style-type: none;
+    list-style-type: none; /* Fjern punkter fra listen */
 }
 
 header .navbar ul li {
@@ -114,8 +117,8 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: var(--primary-color);
-    display: none;
+    background: var(--primary-color); /* Dropdown baggrundsfarve */
+    display: none; /* Dropdown vises kun ved hover */
 }
 
 header .navbar ul li ul li {
@@ -127,6 +130,7 @@ header .navbar ul li ul li ul {
     top: 0;
 }
 
+/* Brug af hover og focus-within til at vise dropdown-menuer */
 header .navbar ul li:focus-within > ul ,
 header .nvabar ul li:hover > ul {
     display: block;
@@ -213,12 +217,12 @@ header .navbar ul li ul li ul {
 }
 
 
-
 /* NAVBAR SLUT */
 
 
 
 /* LANDING PAGE */
+
 
 .logo {
     width: 50%;
