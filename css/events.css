@@ -520,7 +520,46 @@ input[type=submit]:hover {
 }
 
 
+.error {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20%;
+    background-image: url("/img/scene.webp");
+    background-blend-mode: overlay;
+    background-color: var(--primary-color);
+}
 
+.error h1, h2, h3 {
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 100%;
+    padding-top: 3%;
+}
+
+.error h1 {
+    font-size: 17rem;
+    font-family: var(--headline);
+}
+
+.error h2 {
+    font-size: 2.3rem;
+    font-family: var(--font);
+}
+
+.error h3 {
+    font-size: 1.6rem;
+    font-family: var(--font);
+}
+
+.error-main {
+    height: 100vh;
+    overflow: hidden;
+    background: var(--primary-color);
+}
 
 
 
@@ -664,6 +703,12 @@ input[type=submit]:hover {
         line-height: 100%;
     }
 
+
+    .error h1, h2, h3 {
+        transform: scale(0.8);
+        padding-top: 0%;
+    }
+
 }
 
 
@@ -788,6 +833,12 @@ input[type=submit]:hover {
         padding-top: 20px;
         text-align: center;
         line-height: 100%;
+    }
+
+
+    .error h1, h2, h3 {
+        transform: scale(0.8);
+        padding-top: 0%;
     }
 
 }
